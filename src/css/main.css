@@ -470,45 +470,38 @@
     color: var(--color-white);
     font-family: "Orbitron", sans-serif;
     border-color: var(--neon-blue);
-    backface-visibility: hidden;
+    position: relative;
     box-shadow: inset 0 0 4px 3px var(--neon-blue), 0 0 4px 1px var(--neon-blue);
-    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), filter 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  @media (max-width: 1024px) {
-    .primary-cta {
-      padding-inline: calc(var(--spacing) * 5);
-      padding-block: calc(var(--spacing) * 3);
-    }
-  }
-  @media (max-width: 640px) {
-    .primary-cta {
-      padding-inline: calc(var(--spacing) * 6);
-      padding-block: calc(var(--spacing) * 4);
-      font-size: 1.125rem;
-      --tw-leading: calc(var(--spacing) * 6);
-      line-height: calc(var(--spacing) * 6);
-    }
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), filter 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .primary-cta:hover {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: inset 0 0 8px 4px #00F5FF, 0 0 12px 3px #00F5FF, 0 0 24px 6px rgba(0,245,255,0.4);
     filter: brightness(1.1);
-  }
-  .primary-cta:active {
-    transform: translateY(1px) scale(0.98);
-    transition-duration: 0.1s;
   }
   .primary-cta::after {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
+    box-shadow: 0 0 8px 4px var(--neon-blue), 0 0 12px 3px var(--neon-blue), 0 0 24px 6px rgba(0,245,255,0.4);
     opacity: 0;
-    box-shadow: 0 0 20px #00F5FF;
-    transition: opacity 0.4s ease;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
   }
   .primary-cta:hover::after {
-    opacity: 0.4;
+    opacity: 1;
+    animation: neon-pulse 1.5s infinite alternate;
+  }
+  @keyframes neon-pulse {
+    0% {
+      box-shadow: 0 0 8px 4px var(--neon-blue), 0 0 12px 3px var(--neon-blue), 0 0 24px 6px rgba(0,245,255,0.4);
+    }
+    50% {
+      box-shadow: 0 0 12px 6px var(--neon-blue), 0 0 18px 6px var(--neon-blue), 0 0 36px 12px rgba(0,245,255,0.5);
+    }
+    100% {
+      box-shadow: 0 0 8px 4px var(--neon-blue), 0 0 12px 3px var(--neon-blue), 0 0 24px 6px rgba(0,245,255,0.4);
+    }
   }
 }
 @property --tw-font-weight {
