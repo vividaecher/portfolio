@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="src/output.css" rel="stylesheet">
+  <link href="src/css/main.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="text-white bg-[var(--space-black)] bg-[url(../img/Sterne.svg)] bg-clip-border bg-no-repeat bg-top">
+  <section class="section">
+    <div class="container-main">
+      <header class="split">
+        <div class="flex items-center justify-center flex-col order-2 lg:order-1">
+          <h1 class="font-medium text-center">Willkommen auf  dem Launchpad von <span class="uppercase">Vivi</span></h1>
+          <img class="section-inner-small-top section-inner-small-bottom" src="src/img/hero_stroke.svg" alt="Designelemnt zur Trennung" />
+          <span class="font-medium text-center">Frontend Software Developer & Pixel-Pilot</span>
+          <button class="primary-cta section-inner-small-top">Mehr erfahren</button>
+        </div>
+        <div class="flex items-center justify-center order-1 lg:order-2">
+          <img src="src/img/portrait_virginia_daecher_space_ki_generated.png" alt="Portrait von Virginia Dächer in einem Space Suit, KI Generated" />
+        </div>
+      </header>
+      <img class="section-inner lg:!mt-[-5px]" src="src/img/divider.svg" alt="Trennelement zur Unterscheidung der einzelnen Sektionen" />
+    </div>
+  </section>
 </body>
 </html>

@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/RobotoMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/RobotoMono-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Oribitron';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Oribitron-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Oribitron';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Oribitron-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/MaterialSymbolsOutlined28pt-Regular.woff2") format("woff2");
+}
+
+
+@layer utilities {
+  :root {
+    /* Desktop */
+    --space-section: 6rem;     /* 96px */
+    --space-inner: 4rem;       /* 64px */
+    --space-inner-small: 2rem; /* 32px */
+  }
+
+  @media (max-width: 1024px) {
+    :root {
+      --space-section: 4.5rem; /* 72px */
+      --space-inner: 3rem;     /* 48px */
+      --space-inner-small: 1.5rem; /* 24px */
+    }
+  }
+
+  @media (max-width: 480px) {
+    :root {
+      --space-section: 3.5rem; /* 56px */
+      --space-inner: 2.5rem;   /* 40px */
+      --space-inner-small: 1rem; /* 16px */
+    }
+  }
+
+  .section {
+    padding-top: var(--space-section);
+    padding-bottom: var(--space-section);
+  }
+
+  .section-inner {
+    margin-top: var(--space-inner);
+  }
+
+  .section-inner-small-top {
+    margin-top: var(--space-inner-small);
+  }
+
+    .section-inner-small-bottom {
+    margin-bottom: var(--space-inner-small);
+  }
+
+  /* ======================
+     Container Tokens
+  ====================== */
+
+  :root {
+    --container-max: 1440px;
+    --container-padding: 32px;
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    :root {
+      --container-max: 960px;
+      --container-padding: 24px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    :root {
+      --container-max: 100%;
+      --container-padding: 16px;
+    }
+  }
+
+  /* ======================
+     Main Container
+  ====================== */
+
+  .container-main {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  :root {
+    --space-black: #0A0F1F;
+    --neon-blue: #00F5FF;
+  }
+}
+
+@layer components {
+    /* Desktop-Basis */
+    h1 { @apply text-[4rem] leading-[5rem] text-white; }   /* 64px / 80px */
+    h2 { @apply text-[3rem] leading-[4rem]; }   /* 48px / 64px */
+    h3 { @apply text-[2rem] leading-[2.5rem]; } /* 32px / 40px */
+    h4 { @apply text-[1.5rem] leading-[2rem]; } /* 24px / 32px */
+    body { @apply text-[1rem] leading-[1.5rem]; } /* 16px / 24px */
+    .small { @apply text-[0.875rem] leading-[1.5rem]; } /* 14px / 24px */
+
+    /* Tablet (768-1024px) */
+    @media (max-width: 1024px) {
+    h1 { @apply text-[3.5rem] leading-[4rem]; }     /* 56px / 64px */
+    h2 { @apply text-[2.5rem] leading-[3.5rem]; }   /* 40px / 56px */
+    h3 { @apply text-[1.75rem] leading-[2.25rem]; } /* 28px / 36px */
+    h4 { @apply text-[1.25rem] leading-[1.75rem]; } /* 20px / 28px */
+    body { @apply text-[0.9375rem] leading-[1.5rem]; } /* 15px / 24px */
+    .small { @apply text-[0.8125rem] leading-[1.5rem]; } /* 13px / 24px */
+    }
+
+    /* Mobile (320-480px) */
+    @media (max-width: 480px) {
+    h1 { @apply text-[2.5rem] leading-[3rem]; }       /* 40px / 48px */
+    h2 { @apply text-[2rem] leading-[2.5rem]; }       /* 32px / 40px */
+    h3 { @apply text-[1.5rem] leading-[2rem]; }       /* 24px / 32px */
+    h4 { @apply text-[1.25rem] leading-[1.75rem]; }   /* 20px / 28px */
+    body { @apply text-[0.875rem] leading-[1.5rem]; } /* 14px / 24px */
+    .small { @apply text-[0.75rem] leading-[1.25rem]; } /* 12px / 20px */
+    }
+
+
+    html, body {
+       font-family: 'Roboto Mono', monospace;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+
+    .split {
+        @apply grid grid-cols-12 gap-8;
+    }
+
+    .split > * {
+        @apply col-span-6;
+    }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .split {
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .split > * {
+      grid-column: span 8 / span 8;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .split {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .split > * {
+      grid-column: span 4 / span 4;
+    }
+  }
+
+.primary-cta {
+    @apply inline-flex items-center justify-center gap-2
+           px-4 py-3
+           rounded-[12px_4px]
+           border-2
+           text-[1rem]
+           font-medium
+           text-white;
+           
+    font-family: "Orbitron", sans-serif;
+
+    border-color: var(--neon-blue);
+    box-shadow:
+      inset 0 0 4px 3px var(--neon-blue),
+      0 0 4px 1px var(--neon-blue);
+
+      transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  @media (max-width: 1024px) {
+  .primary-cta {
+    @apply px-5 py-3;
+  }
+}
+
+@media (max-width: 640px) {
+  .primary-cta {
+    @apply px-6 py-4 text-[1.125rem] leading-6;
+  }
+}
+
+.primary-cta:hover {
+  transform: translateY(-2px) scale(1.02);
+
+  box-shadow:
+    inset 0 0 8px 4px #00F5FF,
+    0 0 12px 3px #00F5FF,
+    0 0 24px 6px rgba(0,245,255,0.4);
+
+  filter: brightness(1.1);
+}
+
+.primary-cta:active {
+  transform: translateY(1px) scale(0.98);
+  transition-duration: 0.1s;
+}
+.primary-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  box-shadow: 0 0 20px #00F5FF;
+  transition: opacity 0.4s ease;
+}
+
+.primary-cta:hover::after {
+  opacity: 0.4;
+}
+}
+
