@@ -1,26 +1,38 @@
 <!doctype html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="src/css/main.css" rel="stylesheet">
+  <title data-i18n="hero_title">Willkommen auf dem Launchpad von Vivi</title>
+  <link href="dist/css/main.css" rel="stylesheet">
 </head>
 <body class="text-white bg-[var(--space-black)] bg-[url(../img/Sterne.svg)] bg-clip-border bg-no-repeat bg-top">
   <section class="section">
     <div class="container-main">
       <header class="split">
         <div class="flex items-center justify-center flex-col order-2 lg:order-1">
-          <h1 class="font-medium text-center">Willkommen auf  dem Launchpad von <span class="uppercase">Vivi</span></h1>
-          <img class="section-inner-small-top section-inner-small-bottom" src="src/img/hero_stroke.svg" alt="Designelemnt zur Trennung" />
-          <span class="font-medium text-center">Frontend Software Developer & Pixel-Pilot</span>
-          <button class="primary-cta section-inner-small-top">Mehr erfahren</button>
+          <h1 class="font-medium text-center">
+            <span data-i18n="hero_title">Willkommen auf dem Launchpad von</span> <span class="uppercase">Vivi</span>
+          </h1>
+          <img class="section-inner-small-top section-inner-small-bottom" src="dist/img/hero_stroke.svg" alt="Designelemnt zur Trennung" />
+          <span class="font-medium text-center" data-i18n="hero_subtitle">Frontend Software Developer & Pixel-Pilot</span>
+          <button class="primary-cta section-inner-small-top" data-i18n="hero_button">Mehr erfahren</button>
         </div>
         <div class="flex items-center justify-center order-1 lg:order-2">
-          <img src="src/img/portrait_virginia_daecher_space_ki_generated.png" alt="Portrait von Virginia Dächer in einem Space Suit, KI Generated" />
+          <img src="dist/img/portrait_virginia_daecher_space_ki_generated.png" alt="Portrait von Virginia Dächer in einem Space Suit, KI Generated" />
         </div>
       </header>
-      <img class="section-inner lg:!mt-[-5px]" src="src/img/divider.svg" alt="Trennelement zur Unterscheidung der einzelnen Sektionen" />
+      <img class="section-inner lg:!mt-[-5px]" src="dist/img/divider.svg" alt="Trennelement zur Unterscheidung der einzelnen Sektionen" />
     </div>
   </section>
+
+  <!-- Sprachwechsel Buttons -->
+  <div class="flex justify-center gap-4 mt-4">
+    <button onclick="setLanguage('de')" class="primary-cta">DE</button>
+    <button onclick="setLanguage('en')" class="primary-cta">EN</button>
+  </div>
+
+  <!-- JS für i18n -->
+  <script type="module" src="dist/js/main.js"></script>
 </body>
 </html>
