@@ -222,16 +222,6 @@
       order: 2;
     }
   }
-  .lg\:\!-mt-\[-5px\] {
-    @media (width >= 64rem) {
-      margin-top: calc(-5px * -1) !important;
-    }
-  }
-  .lg\:\!-mt-\[var\(--divider-offset\)\] {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--divider-offset) * -1) !important;
-    }
-  }
   .lg\:\!mt-\[-5px\] {
     @media (width >= 64rem) {
       margin-top: -5px !important;
@@ -253,18 +243,18 @@
   src: url("/fonts/RobotoMono-Medium.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Oribitron';
+  font-family: 'Orbitron';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Oribitron-Medium.woff2") format("woff2");
+  src: url("/fonts/Orbitron-Medium.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Oribitron';
+  font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Oribitron-Bold.woff2") format("woff2");
+  src: url("/fonts/Orbitron-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: 'Material Symbols Outlined';
@@ -435,6 +425,9 @@
   h1, h2, h3, h4 {
     font-family: 'Orbitron', sans-serif;
   }
+  header {
+    font-family: 'Orbitron', sans-serif;
+  }
   .split {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -477,6 +470,7 @@
     color: var(--color-white);
     font-family: "Orbitron", sans-serif;
     border-color: var(--neon-blue);
+    backface-visibility: hidden;
     box-shadow: inset 0 0 4px 3px var(--neon-blue), 0 0 4px 1px var(--neon-blue);
     transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), filter 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   }

@@ -17,19 +17,19 @@
 }
 
 @font-face {
-  font-family: 'Oribitron';
+  font-family: 'Orbitron';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Oribitron-Medium.woff2") format("woff2");
+  src: url("/fonts/Orbitron-Medium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Oribitron';
+  font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Oribitron-Bold.woff2") format("woff2");
+  src: url("/fonts/Orbitron-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -162,6 +162,10 @@
         font-family: 'Orbitron', sans-serif;
     }
 
+    header {
+       font-family: 'Orbitron', sans-serif;
+    }
+
 
     .split {
         @apply grid grid-cols-12 gap-8;
@@ -207,6 +211,7 @@
     font-family: "Orbitron", sans-serif;
 
     border-color: var(--neon-blue);
+    backface-visibility: hidden;
     box-shadow:
       inset 0 0 4px 3px var(--neon-blue),
       0 0 4px 1px var(--neon-blue);
