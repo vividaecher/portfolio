@@ -11,5 +11,19 @@
   "section_title_mission_briefing": "Mission Briefing",
   "section_title_bodytext_mission_briefing": "Great to have you on board!",
   "section_bodytext_paragraph_one_mission_briefing": "I am your guide through the digital galaxy: from pixel planets to HTML & CSS orbits to interactive interfaces that take off. My mission? To bring designs to life and steer code into smooth stellar trajectories.",
-  "section_bodytext_paragraph_two_mission_briefing": "I combine UI design with front-end development: conceptually well thought-out, technically clean, and with a clear focus on user guidance. My goal is to design digital products that are visually appealing as well as high-performing and structured."
+  "section_bodytext_paragraph_two_mission_briefing": "I combine UI design with front-end development: conceptually well thought-out, technically clean, and with a clear focus on user guidance. My goal is to design digital products that are visually appealing as well as high-performing and structured.",
+  "skills_title": "Skills",
+  "softskills_title": "Soft Skills",
+  "skill_html": "HTML5",
+  "skill_css": "CSS3",
+  "skill_js": "JavaScript",
+  "skill_frameworks": "Angular/Vue/React",
+  "skill_typo3": "Typo3",
+  "skill_git": "Git",
+  "skill_uiux": "UI/UX Design",
+  "skill_concept": "Concept",
+  "skill_agile": "Lean/Agile/Scrum",
+  "soft_pairing": "Pairing Queen",
+  "soft_team": "Team Player",
+  "soft_communication": "Communication"
 }
