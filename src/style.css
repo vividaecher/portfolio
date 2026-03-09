@@ -146,13 +146,17 @@ h1, h2, h3, h4, header {
 ====================== */
 @layer components {
 
+  body {@apply flex flex-col;}
+  main {flex: 1 0 auto}
+
   /* Headings */
   h1 { @apply text-[4rem] leading-[5rem] text-white; }
   h2 { @apply text-[3rem] leading-[4rem]; }
   h3 { @apply text-[2rem] leading-[2.5rem]; }
   h4 { @apply text-[1.5rem] leading-[2rem]; }
   body { @apply text-[1rem] leading-[1.5rem]; }
-  .small { @apply text-[0.875rem] leading-[1.5rem]; }
+  .small { @apply text-[0.875rem] leading-[1.5rem];}
+
 
   @media (max-width: 1024px) {
     h1 { @apply text-[3.5rem] leading-[4rem]; }
@@ -170,6 +174,10 @@ h1, h2, h3, h4, header {
     h4 { @apply text-[1.25rem] leading-[1.75rem]; }
     body { @apply text-[0.875rem] leading-[1.5rem]; }
     .small { @apply text-[0.75rem] leading-[1.25rem]; }
+  }
+
+  h2 {
+    @apply uppercase;
   }
 
   /* Split Grid */
@@ -239,7 +247,7 @@ h1, h2, h3, h4, header {
     }
   }
 
-  /* Divider Komet */
+  /* Divider Kometen */
   .divider-komet {
     max-width: 300px;
     width: 100%;
@@ -251,6 +259,14 @@ h1, h2, h3, h4, header {
                 0 0 6px var(--neon-blue),
                 0 0 12px var(--neon-blue);
   }
+
+  .divider-komet-small-rotated {
+    transform: rotate(90deg);
+  }
+
+  /* Sprachswitchn */
+
+  .active-lang { @apply text-[var(--neon-blue)]; }
 
   /* Navigation */
   .nav-link { @apply text-white transition-all duration-300; }

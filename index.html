@@ -46,6 +46,7 @@
       </ul>
   </div>
 </nav>
+<main>
 <section class="section-inner">
   <div class="container-main">
     <nav class="hidden lg:block" aria-label="Hauptnavigation">
@@ -90,12 +91,12 @@
     <header class="split section-inner">
       <div class="flex items-center justify-center flex-col order-2 lg:order-1">
         <h1 class="font-medium text-center">
-          <span data-i18n="hero_title">Willkommen auf dem Launchpad von</span>
+          <span data-i18n="hero_title"></span>
           <span class="uppercase">Vivi</span>
         </h1>
         <div class="divider-komet section-inner-small-top section-inner-small-bottom"></div>
-        <span class="font-medium text-center" data-i18n="hero_subtitle">Frontend Software Developer & Pixel-Pilot</span>
-        <button class="primary-cta section-inner-small-top section-inner-small-bottom" data-i18n="hero_button">Mehr erfahren</button>
+        <span class="font-medium text-center" data-i18n="hero_subtitle"></span>
+        <button class="primary-cta section-inner-small-top section-inner-small-bottom" data-i18n="hero_button"></button>
       </div>
       <div class="flex items-center justify-center order-1 lg:order-2">
         <img src="/img/portrait_virginia_daecher_space_ki_generated.png" alt="Portrait von Virginia Dächer in einem Space Suit, KI Generated">
@@ -104,14 +105,42 @@
     <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
   </div>
 </section>
-<section class="section">
-  <!-- Sprachwechsel Buttons -->
-  <div class="flex justify-center gap-4 mt-4">
-    <button data-i18n="btn_lang_de" onclick="setLanguage('de')" class="primary-cta"></button>
-    <button data-i18n="btn_lang_en" onclick="setLanguage('en')" class="primary-cta"></button>
-  </div>
+<div class="container-main">
+  <section class="section">
+    <div class="flex justify-center items-center">
+      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+      <h2 data-i18n="section_title_mission_briefing" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center"></h2>
+      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+    </div>
+    <div class="split section-inner">
+      <div class="order-2 lg:order-1">
+        Foo links
+      </div>
+      <div class="order-1 lg:order-2">
+        <h3 data-i18n="section_title_bodytext_mission_briefing"></h3>
+      <div class="divider-komet mb-[1rem] text-left"></div>
+        <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_one_mission_briefing"></p>
+        <p class="mb-0" data-i18n="section_bodytext_paragraph_two_mission_briefing"></p>
+      </div>
+    </div>
   </section>
+  <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+</div>
 
+</main>
+
+<div class="container-main mb-[2rem]">
+  <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent mb-[1rem]"></div>
+  <footer class="flex justify-between flex-wrap">
+    <p><span class="text-[24px]">©</span> 2026 Virginia Dächer - Made with curiosity, clean code & a love for good interfaces.</p>
+    <!-- Sprachwechsel Buttons -->
+    <div class="flex items-center">
+      <a href="#" data-i18n="btn_lang_de" onclick="setLanguage('de'); return false;"></a>
+      <div class="w-[24px] divider-komet-small-rotated h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+      <a href="#" data-i18n="btn_lang_en" onclick="setLanguage('en'); return false;"></a>
+    </div>
+  </footer>
+</div>
   <!-- JS -->
   <script type="module" src="/src/main.js"></script>
 </body>

@@ -6,6 +6,10 @@
   "nav_crew_profile": "Crew-Profil",
   "nav_launchpad": "Launchpad",
   "nav_imprint": "Impressum & Datenschutz",
-  "btn_lang_de": "Deutsch",
-  "btn_lang_en": "Englisch"
+  "btn_lang_de": "[DE",
+  "btn_lang_en": "EN]",
+  "section_title_mission_briefing": "Einsatzbesprechung",
+  "section_title_bodytext_mission_briefing": "Schön, dass du an Bord bist!",
+  "section_bodytext_paragraph_one_mission_briefing": "Ich bin dein Guide durch die digitale Galaxie: von Pixel-Planeten über HTML- & CSS-Orbits bis zu interaktiven Interfaces, die abheben. Meine Mission? Designs zum Leben erwecken und Code in reibungslose Sternenbahnen lenken.",
+  "section_bodytext_paragraph_two_mission_briefing": "Ich verbinde UI-Design mit Frontend-Entwicklung: Konzeptionell durchdacht, technisch sauber und mit einem klaren Blick für Nutzerführung. Mein Anspruch ist es, digitale Produkte zu gestalten, die sowohl visuell überzeugen als auch performant und strukturiert umgesetzt sind."
 }

@@ -7,13 +7,15 @@ export async function loadTranslations(lang) {
     if (translations[key]) {
       el.textContent = translations[key]
     }
-  })
+  });
 
-  document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+  // Sprach-Buttons
+  const buttons = document.querySelectorAll("[data-i18n^='btn_lang_']");
 
-  const key = el.getAttribute("data-i18n-aria-label");
+  // Entferne zuerst die aktive Klasse von allen
+  buttons.forEach(btn => btn.classList.remove("active-lang"));
 
-  el.placeholder = translations[key];
-
-});
+  // Finde den Button für die gewählte Sprache und füge die Klasse hinzu
+  const activeBtn = document.querySelector(`[data-i18n="btn_lang_${lang}"]`);
+  if (activeBtn) activeBtn.classList.add("active-lang");
 }
