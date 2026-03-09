@@ -2,5 +2,10 @@
   "hero_title": "Welcome to the launchpad of",
   "hero_subtitle": "Frontend Software Developer & Pixel Pilot",
   "hero_button": "Learn more",
-  "nav_missions": "Missions & Projects"
+  "nav_missions": "Missions & Projects",
+  "nav_crew_profile": "Crew profile",
+  "nav_launchpad": "Launchpad",
+  "nav_imprint": "Imprint & Privacy Policy",
+  "btn_lang_de": "German",
+  "btn_lang_en": "English"
 }

@@ -10,7 +10,9 @@
 <nav id="mobileNav" class="mobile-nav">
   <div class="container-main h-full flex flex-col section">
     <div class="flex justify-between items-center mb-[1rem]">
-      <img src="/img/logo_virginia_daecher.svg" alt="mobiles Logo Virginia Dächer" class="h-[32px]">
+      <a href="#" aria-label="Startseite Virginia Dächer" title="Startseite Virginia Dächer">
+        <img src="/img/logo_virginia_daecher.svg" alt="mobiles Logo Virginia Dächer" class="h-[32px]">
+      </a>
       <button id="closeMenu" class="text-4xl text-white">
         <span class="material-symbols-outlined !text-[2rem]">close</span>
       </button>
@@ -18,20 +20,28 @@
     <div class="h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
       <ul class="flex flex-col text-xl mt-12">
         <li class="nav-item">
-          <a class="current mobile-link text-[var(--neon-blue)]">
-            <span class="material-symbols-outlined">arrow_forward</span> [Launchpad]</a>
+          <a class="mobile-link" aria-label="Startseite von Virginia Dächer" title="Startseite Virginia Dächer">
+            <span class="material-symbols-outlined">arrow_forward</span>
+            <span data-i18n="nav_launchpad"></span>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link"><span class="material-symbols-outlined">arrow_forward</span> Crew-Profil</a>
+          <a class="mobile-link" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
+            <span class="material-symbols-outlined">arrow_forward</span>
+            <span data-i18n="nav_crew_profile"></span>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link label">
+          <a class="mobile-link" aria-label="Portfolio von Virginia Dächer führt" title="Portfolio von Virginia Dächer">
             <span class="material-symbols-outlined">arrow_forward</span>
             <span data-i18n="nav_missions"></span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link"><span class="material-symbols-outlined">arrow_forward</span> Impressum & Datenschutz</a>
+          <a class="mobile-link" aria-label="Impressum & Datenschutz von Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
+            <span class="material-symbols-outlined">arrow_forward</span>
+            <span data-i18n="nav_imprint"></span>
+          </a>
         </li>
       </ul>
   </div>
@@ -43,22 +53,22 @@
         <!-- 12-Spalten-Grid: 5 | 2 (Logo) | 5 -->
         <div class="grid grid-cols-12 items-center py-4">
           <div class="col-span-5 flex items-center">
-            <a href="#" class="current nav-link shrink-0 text-sm font-medium">
-              [Launchpad]
+            <a href="#" class="current nav-link shrink-0 text-sm font-medium" aria-label="Startseite Virginia Dächer">
+              [<span data-i18n="nav_launchpad"></span>]
             </a>
-            <a href="#" class="nav-link mx-auto text-sm font-medium">
-              Crew-Profil
+            <a href="#" class="nav-link mx-auto text-sm font-medium" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
+              <span data-i18n="nav_crew_profile"></span>
             </a>
           </div>
-          <a href="#" class="col-span-2 justify-self-center" aria-label="Startseite">
+          <a href="#" class="col-span-2 justify-self-center" aria-label="Startseite Virginia Dächer" title="Startseite Virginia Dächer">
             <img src="/img/logo_virginia_daecher.svg" alt="Logo Virginia Dächer" class="hidden lg:block" />
           </a>
-          <div class="col-span-5 flex items-center">
+          <div class="col-span-5 flex items-center" aria-label="Portfolio von Virginia Dächer" title="Portfolio Virginia Dächer">
             <a href="#" class="nav-link mx-auto text-sm font-medium">
-              Missionen & Projekte
+              <span data-i18n="nav_missions"></span>
             </a>
-            <a href="#" class="nav-link shrink-0 text-sm font-medium">
-              Impressum & Datenschutz
+            <a href="#" class="nav-link shrink-0 text-sm font-medium" aria-label="Impressum & Datenschutz Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
+              <span data-i18n="nav_imprint"></span>
             </a>
           </div>
         </div>
@@ -67,7 +77,7 @@
     <!-- Mobile Menu Button -->
     <div class="lg:hidden flex justify-between items-center mb-[1rem]">
        <!-- Logo immer horizontal zentriert -->
-      <a href="#" class="justify-self-center" aria-label="Startseite">
+      <a href="#" class="justify-self-center" aria-label="Startseite Virginia Dächer" title="Startseite Virginia Dächer">
         <img src="/img/logo_virginia_daecher.svg" alt="Logo Virginia Dächer" class="h-[32px]" />
       </a>
       <button id="openMenu" class="text-4xl text-[var(--neon-blue)]">
@@ -97,8 +107,8 @@
 <section class="section">
   <!-- Sprachwechsel Buttons -->
   <div class="flex justify-center gap-4 mt-4">
-    <button onclick="setLanguage('de')" class="primary-cta">DE</button>
-    <button onclick="setLanguage('en')" class="primary-cta">EN</button>
+    <button data-i18n="btn_lang_de" onclick="setLanguage('de')" class="primary-cta"></button>
+    <button data-i18n="btn_lang_en" onclick="setLanguage('en')" class="primary-cta"></button>
   </div>
   </section>
 

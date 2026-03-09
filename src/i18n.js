@@ -8,4 +8,12 @@ export async function loadTranslations(lang) {
       el.textContent = translations[key]
     }
   })
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+
+  const key = el.getAttribute("data-i18n-aria-label");
+
+  el.placeholder = translations[key];
+
+});
 }

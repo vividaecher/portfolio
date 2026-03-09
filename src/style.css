@@ -188,7 +188,7 @@ h1, h2, h3, h4, header {
 
   /* Primary CTA Button */
   .primary-cta {
-    @apply inline-flex items-center justify-center gap-2 px-4 py-3 rounded-[12px_4px] border-2 text-[1rem] font-medium text-white;
+    @apply bg-[var(--space-black)] inline-flex items-center justify-center gap-2 px-4 py-3 rounded-[12px_4px] border-2 text-[1rem] font-medium text-white;
     font-family: "Orbitron", sans-serif;
     border-color: var(--neon-blue);
     position: relative;
@@ -256,7 +256,7 @@ h1, h2, h3, h4, header {
   .nav-link { @apply text-white transition-all duration-300; }
   .nav-link:hover { color: var(--neon-blue); text-shadow: 0 0 6px var(--neon-blue); }
 
-  .current {color: var(--neon-blue); transform: translateX(6px); text-transform: lowercase;}
+  .current {@apply text-[var(--neon-blue)] lowercase; transform: translateX(6px);}
 
   .mobile-link { @apply flex items-center gap-4 text-white transition-all duration-300; }
   .mobile-link:hover { color: var(--neon-blue); transform: translateX(6px); }
