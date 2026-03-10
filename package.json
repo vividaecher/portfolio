@@ -5,8 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update-browsers": "npx update-browserslist-db@latest"
   },
+  "browserslist": [
+    "last 2 versions",
+    ">0.5%",
+    "not dead"
+  ],
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "tailwindcss": "^4.2.1"
