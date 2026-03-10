@@ -109,28 +109,28 @@
   <section class="section">
     <div class="flex justify-center items-center">
       <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
-      <h2 data-i18n="section_title_mission_briefing" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center"></h2>
+      <h2 data-i18n="section_title_mission_briefing" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center uppercase"></h2>
       <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
     </div>
     <div class="split section-inner">
       <div class="order-2 lg:order-1">
-        <section class="max-w-6xl mx-auto border-2 border-cyan-400 rounded-2xl shadow-[0_0_25px_#00ffff66] overflow-hidden">
-        <!-- SKILLS HEADER -->
-        <div class="border-b border-cyan-400 pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem]">
-          <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="skills_title"></h4>
-        </div>
+        <section class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl">
+          <!-- SKILLS HEADER -->
+          <div class="border-b border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] md:pr-[2rem] md:pl-[2rem] md:pt-[1rem] md:pb-[1rem] glowing-box">
+            <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="skills_title"></h4>
+          </div>
 
-        <!-- Skills werden hier automatisch eingefügt -->
-        <div id="skillsGrid" class="px-[2rem] py-[1rem] grid gap-10 md:grid-cols-2 lg:grid-cols-3"></div>
+          <!-- Skills werden hier automatisch eingefügt -->
+          <div id="skillsGrid" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-10 md:grid-cols-2 lg:grid-cols-3"></div>
 
-        <!-- SOFT SKILLS HEADER -->
-        <div class="border-y border-cyan-400 pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem]">
-          <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="softskills_title"></h4>
-        </div>
+          <!-- SOFT SKILLS HEADER -->
+          <div class="border-y border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] md:pr-[2rem] md:pl-[2rem] md:pt-[1rem] md:pb-[1rem] glowing-box">
+            <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="softskills_title"></h4>
+          </div>
 
-        <!-- Soft Skills Container -->
-        <div id="softSkills" class="px-[2rem] py-[1rem] grid gap-10 md:grid-cols-3 text-center"></div>
-      </section>
+          <!-- Soft Skills Container -->
+          <div id="softSkills" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-10 md:grid-cols-3 text-center"></div>
+        </section>
       </div>
       <div class="order-1 lg:order-2">
         <h3 data-i18n="section_title_bodytext_mission_briefing"></h3>
@@ -138,6 +138,50 @@
         <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_one_mission_briefing"></p>
         <p class="mb-0" data-i18n="section_bodytext_paragraph_two_mission_briefing"></p>
       </div>
+    </div>
+  </section>
+  <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+</div>
+
+
+<div class="container-main">
+  <section class="section">
+    <div class="flex justify-center items-center">
+      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+      <h2 data-i18n="section_title_mission_log" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center uppercase"></h2>
+      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+    </div>
+    <div class="split section-inner">
+        <section class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl">
+          <!-- HEADER -->
+          <div class="border-b border-[var(--neon-blue)] pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem] glowing-box">
+            <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="experience_title"></h4>
+          </div>
+          <!-- TIMELINE -->
+          <div class="px-[2rem] py-[2rem]">
+            <div class="flex">
+              <!-- Datum -->
+              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
+                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_date"></div>
+                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_date"></div>
+              </div>
+              <!-- vertikale Orbit-Linie -->
+              <div class="hidden md:block divider-komet divider-komet-small-rotated-revert !w-[180px]"></div>
+            
+              <!-- Job -->
+              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
+                <div>
+                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_company"></span>
+                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_1_role"></p>
+                </div>
+                <div>
+                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_company"></span>
+                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_2_role"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
   </section>
   <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>

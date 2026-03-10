@@ -12,6 +12,7 @@
   "section_title_bodytext_mission_briefing": "Schön, dass du an Bord bist!",
   "section_bodytext_paragraph_one_mission_briefing": "Ich bin dein Guide durch die digitale Galaxie: von Pixel-Planeten über HTML- & CSS-Orbits bis zu interaktiven Interfaces, die abheben. Meine Mission? Designs zum Leben erwecken und Code in reibungslose Sternenbahnen lenken.",
   "section_bodytext_paragraph_two_mission_briefing": "Ich verbinde UI-Design mit Frontend-Entwicklung: Konzeptionell durchdacht, technisch sauber und mit einem klaren Blick für Nutzerführung. Mein Anspruch ist es, digitale Produkte zu gestalten, die sowohl visuell überzeugen als auch performant und strukturiert umgesetzt sind.",
+  "section_title_mission_log": "Einsatzprotokoll",
   "skills_title": "Skills",
   "softskills_title": "Soft-Skills",
   "skill_html": "HTML5",
@@ -25,6 +26,14 @@
   "skill_agile": "Lean/Agile/Scrum",
   "soft_pairing": "Pairing-Queen",
   "soft_team": "Team-Player",
-  "soft_communication": "Kommunikation"
+  "soft_communication": "Kommunikation",
+  "experience_title": "Orbit-Erfahrung",
+  "exp_1_date": "Jan 2020 – Heute",
+  "exp_1_company": "DERTICKETSERVICE.DE GmbH & Co. KG",
+  "exp_1_role": "Software Developer Expert Web",
+  "exp_2_date": "Jul 2017 – Dez 2019",
+  "exp_2_company": "DERTICKETSERVICE.DE GmbH & Co. KG",
+  "exp_2_role": "Webdesignerin im E-Commerce"
+
 
 }

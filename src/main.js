@@ -33,7 +33,7 @@ function renderSkills() {
 
     const html = `
       <div>
-        <p class="text-white mb-2" data-i18n="${skill.key}"></p>
+        <p class="text-white mb-[0.5rem] font-bold" data-i18n="${skill.key}"></p>
         <div class="flex gap-1">${bars}</div>
       </div>
     `
@@ -42,10 +42,75 @@ function renderSkills() {
 
   })
 
+  const softSkillsData = [
+    { key: "soft_pairing", icon: "satellite_alt", color: "text-purple-400" },
+    { key: "soft_team", icon: "diversity_1", color: "text-orange-500" },
+    { key: "soft_communication", icon: "mic", color: "text-gray-300" }
+  ];
+
+  const softSkills = document.getElementById("softSkills");
+
+  softSkillsData.forEach(skill => {
+
+    const html = `
+    <div class="flex flex-col items-center gap-2">
+      <span class="material-symbols-outlined ${skill.color}">
+        ${skill.icon}
+      </span>
+      <p class="text-white font-bold" data-i18n="${skill.key}"></p>
+    </div>
+    `;
+
+    softSkills.insertAdjacentHTML("beforeend", html);
+
+  });
+
   // Übersetzungen anwenden
   loadTranslations(window.currentLang)
 
 }
+
+
+function renderExperience() {
+
+
+  const orbitGridData = [
+    { key: "current_job", icon: "satellite_alt", color: "text-purple-400" },
+    { key: "soft_team", icon: "diversity_1", color: "text-orange-500" },
+    { key: "soft_communication", icon: "mic", color: "text-gray-300" }
+  ];
+
+  const orbitGrid = document.getElementById("orbitGrid");
+
+  orbitGridData.forEach(skill => {
+
+    const html = `
+    <div class="flex flex-col items-center gap-2">
+      <span class="material-symbols-outlined ${skill.color}">
+        ${skill.icon}
+      </span>
+      <p class="text-white font-bold" data-i18n="${skill.key}"></p>
+    </div>
+    `;
+
+    softSkills.insertAdjacentHTML("beforeend", html);
+
+  });
+
+  // Übersetzungen anwenden
+  loadTranslations(window.currentLang)
+
+}
+
+
+
+
+
+
+
+
+
+
 
 function getInitialLanguage() {
 

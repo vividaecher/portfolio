@@ -12,6 +12,7 @@
   "section_title_bodytext_mission_briefing": "Great to have you on board!",
   "section_bodytext_paragraph_one_mission_briefing": "I am your guide through the digital galaxy: from pixel planets to HTML & CSS orbits to interactive interfaces that take off. My mission? To bring designs to life and steer code into smooth stellar trajectories.",
   "section_bodytext_paragraph_two_mission_briefing": "I combine UI design with front-end development: conceptually well thought-out, technically clean, and with a clear focus on user guidance. My goal is to design digital products that are visually appealing as well as high-performing and structured.",
+  "section_title_mission_log": "Mission Log",
   "skills_title": "Skills",
   "softskills_title": "Soft Skills",
   "skill_html": "HTML5",
@@ -25,5 +26,14 @@
   "skill_agile": "Lean/Agile/Scrum",
   "soft_pairing": "Pairing Queen",
   "soft_team": "Team Player",
-  "soft_communication": "Communication"
+  "soft_communication": "Communication",
+  "experience_title": "Orbit Experience",
+  "academy_title": "Academy & Training",
+   "exp_1_date": "Jan 2020 – Present",
+  "exp_1_company": "DERTICKETSERVICE.DE GmbH & Co. KG",
+  "exp_1_role": "Software Developer – Web Expert",
+  "exp_2_date": "Jul 2017 – Dec 2019",
+  "exp_2_company": "DERTICKETSERVICE.DE GmbH & Co. KG",
+  "exp_2_role": "Web Designer in E-Commerce"
+
 }
