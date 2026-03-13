@@ -121,7 +121,7 @@
           </div>
 
           <!-- Skills werden hier automatisch eingefügt -->
-          <div id="skillsGrid" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-10 md:grid-cols-2 lg:grid-cols-3"></div>
+          <div id="skillsGrid" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-[1rem] md:gap-[2rem] md:grid-cols-2 lg:grid-cols-3"></div>
 
           <!-- SOFT SKILLS HEADER -->
           <div class="border-y border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] md:pr-[2rem] md:pl-[2rem] md:pt-[1rem] md:pb-[1rem] glowing-box">
@@ -129,7 +129,7 @@
           </div>
 
           <!-- Soft Skills Container -->
-          <div id="softSkills" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-10 md:grid-cols-3 text-center"></div>
+          <div id="softSkills" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-[1rem] md:gap-[2rem] md:grid-cols-3 text-center"></div>
         </section>
       </div>
       <div class="order-1 lg:order-2">
@@ -152,16 +152,17 @@
       <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
     </div>
     <div class="split section-inner">
+      <!-- Berufserfahrung -->
         <section class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl">
           <!-- HEADER -->
           <div class="border-b border-[var(--neon-blue)] pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem] glowing-box">
             <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="experience_title"></h4>
           </div>
           <!-- TIMELINE -->
-          <div class="px-[2rem] py-[2rem]">
+          <div class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem]">
             <div class="flex">
               <!-- Datum -->
-              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
+              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full md:w-[70%]">
                 <div class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_date"></div>
                 <div class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_date"></div>
               </div>
@@ -172,11 +173,42 @@
               <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
                 <div>
                   <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_company"></span>
-                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_1_role"></p>
+                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_1_role"></span>
                 </div>
                 <div>
                   <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_company"></span>
-                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_2_role"></p>
+                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_2_role"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Schulbildung  -->
+        <section class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl">
+          <!-- HEADER -->
+          <div class="border-b border-[var(--neon-blue)] pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem] glowing-box">
+            <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="school_title"></h4>
+          </div>
+          <!-- TIMELINE -->
+          <div class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem]">
+            <div class="flex">
+              <!-- Datum -->
+              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full md:w-[70%]">
+                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_date"></div>
+                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_date"></div>
+              </div>
+              <!-- vertikale Orbit-Linie -->
+              <div class="hidden md:block divider-komet divider-komet-small-rotated-revert !w-[180px]"></div>
+            
+              <!-- Job -->
+              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
+                <div>
+                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_school"></span>
+                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_1_qualification"></span>
+                </div>
+                <div>
+                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_school"></span>
+                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_2_qualification"></span>
                 </div>
               </div>
             </div>
@@ -192,9 +224,9 @@
 <div class="container-main mb-[2rem]">
   <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent mb-[1rem]"></div>
   <footer class="flex justify-between flex-wrap">
-    <p><span class="text-[24px]">©</span> 2026 Virginia Dächer - Made with curiosity, clean code & a love for good interfaces.</p>
+    <p><span class="text-[24px]">©</span> <span data-i18n="copyright"></span></p>
     <!-- Sprachwechsel Buttons -->
-    <div class="flex items-center">
+    <div class="flex items-center text-[1rem] mt-[1rem] md:mt-[0rem]">
       <a href="#" data-i18n="btn_lang_de" onclick="setLanguage('de'); return false;"></a>
       <div class="w-[24px] divider-komet-small-rotated h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
       <a href="#" data-i18n="btn_lang_en" onclick="setLanguage('en'); return false;"></a>

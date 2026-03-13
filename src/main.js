@@ -24,9 +24,9 @@ function renderSkills() {
     for (let i = 1; i <= 5; i++) {
 
       if (i <= skill.level) {
-        bars += `<div class="h-2 w-10 ${skill.color}"></div>`
+        bars += `<div class="h-2 w-full md:w-10 ${skill.color}"></div>`
       } else {
-        bars += `<div class="h-2 w-10 bg-gray-700"></div>`
+        bars += `<div class="h-2 w-full md:w-10 bg-gray-700"></div>`
       }
 
     }
@@ -53,7 +53,7 @@ function renderSkills() {
   softSkillsData.forEach(skill => {
 
     const html = `
-    <div class="flex flex-col items-center gap-2">
+    <div class="flex md:flex-col items-center gap-2">
       <span class="material-symbols-outlined ${skill.color}">
         ${skill.icon}
       </span>
@@ -89,7 +89,7 @@ function renderExperience() {
       <span class="material-symbols-outlined ${skill.color}">
         ${skill.icon}
       </span>
-      <p class="text-white font-bold" data-i18n="${skill.key}"></p>
+      <span class="text-white font-bold" data-i18n="${skill.key}"></span>
     </div>
     `;
 
