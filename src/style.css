@@ -204,7 +204,9 @@ h1, h2, h3, h4, header, .small {
 
   .primary-cta:hover {
     transform: translateY(-2px) scale(1.02);
+    text-shadow: none !important;
     filter: brightness(1.1);
+    color: white !important;
   }
 
   .primary-cta::after {
@@ -243,6 +245,10 @@ h1, h2, h3, h4, header, .small {
     }
   }
 
+  /* Links */
+  a { @apply text-white transition-all duration-300; }
+  a:hover, a:focus, a:active { color: var(--neon-blue); text-shadow: 0 0 6px var(--neon-blue); }
+
   /* Divider Kometen */
   .divider-komet {
     max-width: 300px;
@@ -275,23 +281,22 @@ h1, h2, h3, h4, header, .small {
   }
 
   .glowing-box::after {
-content: "";
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
     box-shadow: 0 0 7px 3px var(--neon-blue),
                 0 0 11px 2px var(--neon-blue),
                 0 0 23px 5px rgba(0,245,255,0.4);
-
   }
 
-  /* Sprachswitchn */
-
+  /* Sprachswitch */
   .active-lang { @apply text-[var(--neon-blue)]; }
 
   /* Navigation */
-  .nav-link { @apply text-white transition-all duration-300; }
+  .nav-link { @apply text-[1rem] text-white transition-all duration-300; }
   .nav-link:hover { color: var(--neon-blue); text-shadow: 0 0 6px var(--neon-blue); }
+
 
   .current {@apply text-[var(--neon-blue)] lowercase; transform: translateX(6px);}
 

@@ -42,5 +42,11 @@
   "school_1_qualification": "Apprenticeship as Digital & Print Media Designer",
   "school_2_date": "Aug 2010 - Jul 2012",
   "school_2_school": "Rudolf Steiner School Remscheid",
-  "school_2_qualification": "Acquisition of the Abitur"
+  "school_2_qualification": "Acquisition of the Abitur",
+  "section_title_bodytext_mission_log": "Ready for the deep dive?",
+  "section_bodytext_paragraph_mission_log": "My complete mission log and past missions are waiting for you. Toggle one of the two switches and set your course.",
+  "mission_log_button": "Download Mission Log",
+  "section_portfolio_link_mission_log": "[Missions & Projects]",
+  "section_title_contact": "Contact Me",
+  "contact_me_button": "virginiadaecher@gmail.com"
 }

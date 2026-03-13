@@ -54,10 +54,10 @@
         <!-- 12-Spalten-Grid: 5 | 2 (Logo) | 5 -->
         <div class="grid grid-cols-12 items-center py-4">
           <div class="col-span-5 flex items-center">
-            <a href="#" class="current nav-link shrink-0 text-sm font-medium" aria-label="Startseite Virginia Dächer">
+            <a href="#" class="current nav-link shrink-0 text-base font-medium" aria-label="Startseite Virginia Dächer">
               [<span data-i18n="nav_launchpad"></span>]
             </a>
-            <a href="#" class="nav-link mx-auto text-sm font-medium" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
+            <a href="#" class="nav-link mx-auto text-base font-medium" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
               <span data-i18n="nav_crew_profile"></span>
             </a>
           </div>
@@ -65,10 +65,10 @@
             <img src="/img/logo_virginia_daecher.svg" alt="Logo Virginia Dächer" class="hidden lg:block" />
           </a>
           <div class="col-span-5 flex items-center" aria-label="Portfolio von Virginia Dächer" title="Portfolio Virginia Dächer">
-            <a href="#" class="nav-link mx-auto text-sm font-medium">
+            <a href="#" class="nav-link mx-auto text-base font-medium">
               <span data-i18n="nav_missions"></span>
             </a>
-            <a href="#" class="nav-link shrink-0 text-sm font-medium" aria-label="Impressum & Datenschutz Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
+            <a href="#" class="nav-link shrink-0 text-base font-medium" aria-label="Impressum & Datenschutz Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
               <span data-i18n="nav_imprint"></span>
             </a>
           </div>
@@ -96,7 +96,7 @@
         </h1>
         <div class="divider-komet section-inner-small-top section-inner-small-bottom"></div>
         <span class="font-medium text-center" data-i18n="hero_subtitle"></span>
-        <button class="primary-cta section-inner-small-top section-inner-small-bottom" data-i18n="hero_button"></button>
+        <a href="#" title="Portfolio von Virginia Dächer" aria-label="Öffnet das Portfolio von Virginia Dächer" class="primary-cta section-inner-small-top section-inner-small-bottom" data-i18n="hero_button"></a>
       </div>
       <div class="flex items-center justify-center order-1 lg:order-2">
         <img src="/img/portrait_virginia_daecher_space_ki_generated.png" alt="Portrait von Virginia Dächer in einem Space Suit, KI Generated">
@@ -134,11 +134,11 @@
       </div>
       <div class="order-1 lg:order-2">
         <h3 data-i18n="section_title_bodytext_mission_briefing"></h3>
-      <div class="divider-komet mb-[1rem] text-left"></div>
-        <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_one_mission_briefing"></p>
-        <p class="mb-0" data-i18n="section_bodytext_paragraph_two_mission_briefing"></p>
+        <div class="divider-komet mb-[1rem] text-left"></div>
+          <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_one_mission_briefing"></p>
+          <p class="mb-0" data-i18n="section_bodytext_paragraph_two_mission_briefing"></p>
+        </div>
       </div>
-    </div>
   </section>
   <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
 </div>
@@ -173,11 +173,11 @@
               <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
                 <div>
                   <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_company"></span>
-                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_1_role"></span>
+                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_1_role"></p>
                 </div>
                 <div>
                   <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_company"></span>
-                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_2_role"></span>
+                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_2_role"></p>
                 </div>
               </div>
             </div>
@@ -204,19 +204,64 @@
               <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
                 <div>
                   <span class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_school"></span>
-                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_1_qualification"></span>
+                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_1_qualification"></p>
                 </div>
                 <div>
                   <span class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_school"></span>
-                  <span class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_2_qualification"></span>
+                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_2_qualification"></p>
                 </div>
               </div>
             </div>
           </div>
         </section>
     </div>
+    <div class="split section-inner-small-top">
+      <div>
+        <h3 data-i18n="section_title_bodytext_mission_log"></h3>
+        <div class="divider-komet mb-[1rem] text-left"></div>
+        <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_mission_log"></p>
+      </div>
+      <div class="flex items-center justify-center flex-wrap">
+         <a href="./documents/lebenslauf_virginia_daecher.pdf" rel="noopener noreferrer" target="_blank" title="Lebenslauf von Virginia Dächer herunterladen" aria-label="Der Lebenslauf von Virginia Dächer öffnet sich als PDF in einem neuen Tab" class="primary-cta mb-[1rem] md:mb-0" data-i18n="mission_log_button"></a>
+         <a class="ml-[0rem] md:ml-[1rem] lowercase" data-i18n="section_portfolio_link_mission_log" href="#" title="Portfolio von Virginia Dächer" aria-label="Öffnet das Portfolio von Virginia Dächer"></a>
+      </div>
+    </div>
   </section>
   <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+</div>
+
+<div class="container-main">
+  <section class="section">
+    <div class="flex justify-center items-center">
+      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+      <h2 data-i18n="section_title_contact" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center uppercase"></h2>
+      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+    </div>
+    <section class="split section-inner">
+      <div>
+        <h3 data-i18n="section_title_bodytext_mission_log"></h3>
+        <div class="divider-komet mb-[1rem] text-left"></div>
+        <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_mission_log"></p>
+        <div class="flex justify-center md:justify-start">
+          <a href="mailto:virginiadaecher@gmail.com" rel="noopener noreferrer" aria-label="Dieser Link öffnet Ihr Mailprogramm mit der Vorbelegung an die E-Mailadresse von Virginia Dächer" class="primary-cta" data-i18n="contact_me_button"></a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center flex-wrap mt-[1rem] md:mt-0">
+         <a href="https://dribbble.com/virginiadaecher" rel="noopener noreferrer" target="_blank" title="Dribbble Profil von Virginia Dächer" aria-label="Das Dribbble-Profil von Virginia Dächer öffnet sich in einem neuen Tab">
+          <img src="/img/Dribbble.svg" alt="Dribbble Logo Icon" class="h-[32px] pr-[1rem]">
+         </a>
+         <a href="https://github.com/vividaecher" rel="noopener noreferrer" target="_blank" title="GitHub Profil von Virginia Dächer" aria-label="Das GitHub-Profil von Virginia Dächer öffnet sich in einem neuen Tab">
+          <img src="/img/GitHub.svg" alt="GitHub Logo Icon" class="h-[32px] pr-[1rem]">
+         </a>
+         <a href="https://www.xing.com/profile/Virginia_Daecher" rel="noopener noreferrer" target="_blank" title="Xing Profil von Virginia Dächer" aria-label="Das Xing-Profil von Virginia Dächer öffnet sich in einem neuen Tab">
+          <img src="/img/Xing.svg" alt="Xing Logo Icon" class="h-[32px] pr-[1rem]">
+         </a>
+         <a href="https://www.linkedin.com/in/virginia-d%C3%A4cher-8b9a13134/" rel="noopener noreferrer" target="_blank" title="LinkedIn Profil von Virginia Dächer" aria-label="Das LinkedIn-Profil von Virginia Dächer öffnet sich in einem neuen Tab">
+          <img src="/img/LinkedIn.svg" alt="Xing Logo Icon" class="h-[32px]">
+         </a>
+      </div>
+    </section>
+  </section>
 </div>
 
 </main>
