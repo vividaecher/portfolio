@@ -1,9 +1,16 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/relaunch/',
-
+  base: '/',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        portfolio: resolve(__dirname, 'portfolio.html'),
+        imprint: resolve(__dirname, 'imprint.html')
+      }
+    }
   }
-});
+})

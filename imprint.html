@@ -2,11 +2,11 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" data-i18n-meta="meta_description_portfolio">
-  <meta name="keywords" data-i18n-meta="meta_keywords_portfolio">
+  <meta name="description" data-i18n-meta="meta_description_imprint">
+  <meta name="keywords" data-i18n-meta="meta_keywords_imprint">
   <meta name="author" content="Virginia Dächer">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no">
-  <title data-i18n="meta_title_portfolio"></title>
+  <title data-i18n="meta_title_imprint"></title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -38,13 +38,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link current-mobile" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
+          <a class="mobile-link" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_missions"></span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
+          <a class="mobile-link current-mobile" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_imprint"></span>
           </a>
@@ -71,10 +71,10 @@
             <img src="/img/logo_virginia_daecher.svg" data-i18n-alt="logo_alt" class="hidden lg:block" />
           </a>
           <div class="col-span-5 flex items-center">
-            <a class="current nav-link mx-auto text-base font-medium" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
+            <a class="nav-link mx-auto text-base font-medium" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
               <span data-i18n="nav_missions"></span>
             </a>
-            <a class="nav-link shrink-0 text-base font-medium" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
+            <a class="current nav-link shrink-0 text-base font-medium" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
               <span data-i18n="nav_imprint"></span>
             </a>
           </div>
@@ -84,7 +84,7 @@
     <!-- Mobile Menu Button -->
     <div class="lg:hidden flex justify-between items-center mb-[1rem]">
        <!-- Logo immer horizontal zentriert -->
-      <a class="justify-self-center" data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
+      <a href="#" class="justify-self-center" data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
         <img src="/img/logo_virginia_daecher.svg" data-i18n-alt="logo_alt" class="h-[32px]" />
       </a>
       <button id="openMenu" class="text-4xl text-[var(--neon-blue)]">
@@ -93,32 +93,33 @@
     </div>
     <!-- Neon Divider -->
     <div class="h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+
+    <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
   </div>
 </section>
 <div class="container-main">
   <section class="section">
-    <h1 class="font-medium text-left" data-i18n="nav_missions"></h1>
-    <div class="divider-komet mb-[1rem] text-left"></div>
-    <section class="section">
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-        <article class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl px-[1rem] py-[1rem] lg:px-[2rem] lg:py-[2rem]">
-          <img src="/img/projects/vorschau_koelnticket.png" data-i18n-alt="project_preview_koelnticket_alt">
-          <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent mb-[2rem]"></div>
-          <h4 data-i18n="project_koelnticket_title" class="uppercase tracking-wider font-bold"></h4>
-          <p class="mb-[1rem]">
-            <span data-i18n="project_preview_koelnticket_date"></span><br>
-            <span data-i18n="exp_1_company"></span>
-          </p>
-          <a class="primary-cta open-project cursor-pointer" data-project="koelnticket" data-i18n-aria="project_preview_koelnticket_aria">
-            <span data-i18n="project_preview_button"></span>
-            <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
-          </a>
-        </article>
-      </div>
+      <h1 class="font-medium text-left" data-i18n="nav_imprint"></h1>
+      <div class="divider-komet mb-[1rem] text-left"></div>
+      <div class="split section-inner">
+        <div>
+          <h2 class="h3" data-i18n="privacy.policy_title"></h2>
+          <div class="divider-komet mb-[1rem] text-left"></div>
+          <span data-i18n="privacy.policy_bodytext"></span>
+        </div>
+        <div>
+          <h2 class="h3" data-i18n="imprint_title"></h2>
+          <div class="divider-komet mb-[1rem] text-left"></div>
+          <span data-i18n="imprint_bodytext"></span>
+        </div>
     </section>
-  </section>
 </div>
+  
+  <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
+</div>
+
 </main>
+
 <div class="container-main mb-[2rem]">
   <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent mb-[1rem]"></div>
   <footer class="flex justify-between flex-wrap">
@@ -131,26 +132,7 @@
     </div>
   </footer>
 </div>
-<!-- JS -->
-<script type="module" src="/src/main.js"></script>
-
-<div id="projectOverlay" class="fixed inset-0 overflow-y-auto h-screen bg-[var(--space-black)] bg-[url(/img/overlay.svg)] bg-no-repeat bg-top z-50">
-  <button id="closeOverlay" class="fixed top-[2rem] right-[1rem] lg:top-[4rem] lg:right-[4rem] z-50">
-      <span class="material-symbols-outlined !text-[2rem] lg:!text-[4rem] text-white">close</span>
-  </button>
-  <div class="container-main relative">
-    <div class="flex justify-center items-center section">
-      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
-        <h2 id="overlayTitle" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center uppercase"></h2>
-      <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
-    </div>
-    <div class="grid lg:grid-cols-2 gap-[3rem]">
-      <img id="overlayImage">
-      <div>
-        <p id="overlayDescription" class=""></p>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- JS -->
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
