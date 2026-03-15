@@ -1,5 +1,6 @@
 {
-  "meta_title": "Portfilio von Virginia Dächer",
+  "meta_title": "Webseite von Virginia Dächer",
+  "meta_title_portfolio": "Portfolio von Virginia Dächer",
   "meta_description": "Frontend Software Developer Virginia Dächer",
   "meta_keywords": "Frontend Software Developer, Design, UX-Design, UI-Design, Frontend-Design, Webdesign, Virginia Dächer, Webdesign Leverkusen, Webdesign Burscheid",
   "hero_title": "Willkommen auf dem Launchpad von",
@@ -7,7 +8,7 @@
   "hero_alt": "Portrait von Virginia Dächer in einem Space Suit, KI-Generiert",
   "hero_button": "Mehr erfahren",
   "nav_missions": "Missionen & Projekte",
-  "portfolio_link": "#",
+  "portfolio_link": "portfolio.html",
   "portfolio_aria": "Öffnet das Portfolio von Virginia Dächer",
   "portfolio_title": "Portfolio von Virginia Dächer",
   "nav_crew_profile": "Crew-Profil",
@@ -15,7 +16,7 @@
   "ueber_mich_title": "Mehr über Virginia Dächer erfahren",
   "ueber_mich_aria": "Öffnet eine Seite, auf der Sie mehr über mich erfahren können",
   "nav_launchpad": "Launchpad",
-  "homescreen_link": "#",
+  "homescreen_link": "index.html",
   "homescreen_title": "Startseite vom Portfolio von Virginia Dächer",
   "homescreen_aria": "Öffnet die Startseite vom Portfolio von Virginia Dächer",
   "logo_alt": "Logo von Virginia Dächer",
@@ -69,6 +70,12 @@
   "section_portfolio_link_mission_log": "[Missionen & Projekte]",
   "section_title_contact": "Kontaktaufnahme",
   "contact_me_button": "virginiadaecher@gmail.com",
-  "mail_aria": "Dieser Link öffnet Ihr Mailprogramm mit der Vorbelegung an die E-Mailadresse von Virginia Dächer"
-
+  "mail_aria": "Dieser Link öffnet Ihr Mailprogramm mit der Vorbelegung an die E-Mailadresse von Virginia Dächer",
+  "project_preview_button": "Einsatzbericht anschauen",
+  "project_koelnticket_title": "koelnticket.de",
+  "project_koelnticket_description": "<span class=\"font-bold text-[var(--neon-blue)]\">Mission:</span> Weiterentwicklung digitaler Ticketplattformen für die Kultur- und Veranstaltungsbranche.<br><br>Seit 2017 war ich an der Konzeption, Gestaltung und technischen Umsetzung neuer Features zur Verbesserung des Usererlebnisses beteiligt. In enger Zusammenarbeit mit Design- und Entwicklungsteams entstanden Lösungen, die Nutzer intuitiv durch umfangreiche Veranstaltungsangebote führen.<br><br>Mein Schwerpunkt lag auf der Verbindung von UI-Design und Frontend-Umsetzung – von der ersten Konzeptidee über das Design bis zur Implementierung in HTML, CSS und JavaScript innerhalb des CMS TYPO3.<br><br>Das gezeigte Beispiel umfasst eine Künstlerseite, die ich eigenständig konzipiert, gestaltet und technisch umgesetzt habe.<br><br><span class=\"font-bold text-[var(--neon-blue)]\">Workload:</span> UX / UI, Konzept, Umsetzung in Fluid, LESS und JavaScript<br><br><span class=\"font-bold text-[var(--neon-blue)]\">Tools:</span> Adobe XD, PHPStorm",
+  "project_preview_koelnticket_alt": "Projekt koelnticket.de als Vorschau in einem MacBook Pro",
+  "project_preview_koelnticket_date": "2017 - 2023",
+  "project_preview_koelnticket_aria": "Das Projekt 'koelnticket.de' öffnet sich in einem Overlay mit weiteren Infomationen zum Projekt",
+  "project_details_koelnticket_alt": "Projekt koelnticket.de als Vorschau in verschiedenen Devices"
 }
