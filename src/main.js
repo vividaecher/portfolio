@@ -129,11 +129,13 @@ function getInitialLanguage() {
 function setLanguage(lang) {
   localStorage.setItem("language", lang)
   window.currentLang = lang
+  document.documentElement.lang = lang
   loadTranslations(lang)
 }
 
 const initialLang = getInitialLanguage()
 window.currentLang = initialLang
+document.documentElement.lang = initialLang
 loadTranslations(initialLang)
 
 window.setLanguage = setLanguage

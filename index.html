@@ -2,16 +2,22 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="hero_title">Willkommen auf dem Launchpad von Vivi</title>
+  <meta name="description" data-i18n-meta="meta_description">
+  <meta name="keywords" data-i18n-meta="meta_keywords">
+  <meta name="author" content="Virginia Dächer">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no">
+  <title data-i18n="meta_title"></title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body class="text-white bg-[var(--space-black)] bg-[url(/img/Sterne.svg)] bg-no-repeat bg-top">
 <!-- MOBILE NAV -->
 <nav id="mobileNav" class="mobile-nav">
   <div class="container-main h-full flex flex-col section">
     <div class="flex justify-between items-center mb-[1rem]">
-      <a href="#" aria-label="Startseite Virginia Dächer" title="Startseite Virginia Dächer">
-        <img src="/img/logo_virginia_daecher.svg" alt="mobiles Logo Virginia Dächer" class="h-[32px]">
+      <a data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
+        <img src="/img/logo_virginia_daecher.svg" data-i18n-alt="logo_alt" class="h-[32px]">
       </a>
       <button id="closeMenu" class="text-4xl text-white">
         <span class="material-symbols-outlined !text-[2rem]">close</span>
@@ -20,25 +26,25 @@
     <div class="h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
       <ul class="flex flex-col text-xl mt-12">
         <li class="nav-item">
-          <a class="mobile-link current-mobile" aria-label="Startseite von Virginia Dächer" title="Startseite Virginia Dächer">
+          <a class="mobile-link current-mobile" data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_launchpad"></span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
+          <a class="mobile-link" data-i18n-href="ueber_mich_link" data-i18n-aria="ueber_mich_aria" data-i18n-title="ueber_mich_title">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_crew_profile"></span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link" aria-label="Portfolio von Virginia Dächer führt" title="Portfolio von Virginia Dächer">
+          <a class="mobile-link" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_missions"></span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link" aria-label="Impressum & Datenschutz von Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
+          <a class="mobile-link" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_imprint"></span>
           </a>
@@ -54,21 +60,21 @@
         <!-- 12-Spalten-Grid: 5 | 2 (Logo) | 5 -->
         <div class="grid grid-cols-12 items-center py-4">
           <div class="col-span-5 flex items-center">
-            <a href="#" class="current nav-link shrink-0 text-base font-medium" aria-label="Startseite Virginia Dächer">
+            <a class="current nav-link shrink-0 text-base font-medium" data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
               <span data-i18n="nav_launchpad"></span>
             </a>
-            <a href="#" class="nav-link mx-auto text-base font-medium" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
+            <a class="nav-link mx-auto text-base font-medium" data-i18n-href="ueber_mich_link" data-i18n-aria="ueber_mich_aria" data-i18n-title="ueber_mich_title">
               <span data-i18n="nav_crew_profile"></span>
             </a>
           </div>
-          <a href="#" class="col-span-2 justify-self-center" aria-label="Startseite Virginia Dächer" title="Startseite Virginia Dächer">
-            <img src="/img/logo_virginia_daecher.svg" alt="Logo Virginia Dächer" class="hidden lg:block" />
+          <a class="col-span-2 justify-self-center" data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
+            <img src="/img/logo_virginia_daecher.svg" data-i18n-alt="logo_alt" class="hidden lg:block" />
           </a>
-          <div class="col-span-5 flex items-center" aria-label="Portfolio von Virginia Dächer" title="Portfolio Virginia Dächer">
-            <a href="#" class="nav-link mx-auto text-base font-medium">
+          <div class="col-span-5 flex items-center">
+            <a class="nav-link mx-auto text-base font-medium" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
               <span data-i18n="nav_missions"></span>
             </a>
-            <a href="#" class="nav-link shrink-0 text-base font-medium" aria-label="Impressum & Datenschutz Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
+            <a class="nav-link shrink-0 text-base font-medium" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
               <span data-i18n="nav_imprint"></span>
             </a>
           </div>
@@ -79,7 +85,7 @@
     <div class="lg:hidden flex justify-between items-center mb-[1rem]">
        <!-- Logo immer horizontal zentriert -->
       <a href="#" class="justify-self-center" aria-label="Startseite Virginia Dächer" title="Startseite Virginia Dächer">
-        <img src="/img/logo_virginia_daecher.svg" alt="Logo Virginia Dächer" class="h-[32px]" />
+        <img src="/img/logo_virginia_daecher.svg" data-i18n-alt="logo_alt" class="h-[32px]" />
       </a>
       <button id="openMenu" class="text-4xl text-[var(--neon-blue)]">
         <span class="material-symbols-outlined !text-[2rem]">menu</span>
@@ -96,10 +102,16 @@
         </h1>
         <div class="divider-komet section-inner-small-top section-inner-small-bottom"></div>
         <span class="font-medium text-center" data-i18n="hero_subtitle"></span>
-        <a href="#" title="Portfolio von Virginia Dächer" aria-label="Öffnet das Portfolio von Virginia Dächer" class="primary-cta section-inner-small-top section-inner-small-bottom" data-i18n="hero_button"></a>
+        <a 
+          data-i18n="hero_button"
+          data-i18n-href="portfolio_link"
+          data-i18n-aria="portfolio_aria"
+          data-i18n-title="portfolio_title"
+          class="primary-cta section-inner-small-top section-inner-small-bottom">
+        </a>
       </div>
       <div class="flex items-center justify-center order-1 lg:order-2">
-        <img src="/img/portrait_virginia_daecher_space_ki_generated.png" alt="Portrait von Virginia Dächer in einem Space Suit, KI Generated">
+        <img src="/img/portrait_virginia_daecher_space_ki_generated.png" data-i18n-alt="hero_alt">
       </div>
     </header>
     <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
@@ -218,8 +230,21 @@
         <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_mission_log"></p>
       </div>
       <div class="flex items-center justify-center flex-col sm:flex-row">
-         <a href="./documents/lebenslauf_virginia_daecher.pdf" rel="noopener noreferrer" target="_blank" title="Lebenslauf von Virginia Dächer herunterladen" aria-label="Der Lebenslauf von Virginia Dächer öffnet sich als PDF in einem neuen Tab" class="primary-cta mb-[1rem] sm:mb-0" data-i18n="mission_log_button"></a>
-         <a class="ml-[0rem] sm:ml-[1rem] lowercase" data-i18n="section_portfolio_link_mission_log" href="#" title="Portfolio von Virginia Dächer" aria-label="Öffnet das Portfolio von Virginia Dächer"></a>
+        <a 
+          data-i18n="mission_log_button"
+          data-i18n-href="cv_link"
+          data-i18n-aria="cv_aria"
+          data-i18n-title="cv_title"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="primary-cta mb-[1rem] sm:mb-0">
+        </a>
+         <a 
+            data-i18n="section_portfolio_link_mission_log"
+            data-i18n-href="portfolio_link"
+            data-i18n-aria="portfolio_aria"
+            data-i18n-title="portfolio_title"
+            class="ml-[0rem] sm:ml-[1rem] lowercase"></a>
       </div>
     </div>
   </section>
@@ -230,7 +255,7 @@
   <section class="section">
     <div class="flex justify-center items-center">
       <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
-      <h2 data-i18n="section_title_contact" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center uppercase"></h2>
+        <h2 data-i18n="section_title_contact" class="mr-[.5rem] ml-[.5rem] hyphens-auto text-center uppercase"></h2>
       <div class="w-[24px] h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
     </div>
     <section class="split section-inner">
@@ -239,7 +264,13 @@
         <div class="divider-komet mb-[1rem] text-left"></div>
         <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_mission_log"></p>
         <div class="flex justify-center lg:justify-start">
-          <a href="mailto:virginiadaecher@gmail.com" rel="noopener noreferrer" aria-label="Dieser Link öffnet Ihr Mailprogramm mit der Vorbelegung an die E-Mailadresse von Virginia Dächer" class="primary-cta" data-i18n="contact_me_button"></a>
+          <a
+          data-i18n="contact_me_button" 
+          data-i18n-aria="mail_aria" 
+          href="mailto:virginiadaecher@gmail.com"
+          rel="noopener noreferrer"
+          class="primary-cta">
+        </a>
         </div>
       </div>
       <div class="flex items-center justify-center flex-wrap mt-[1rem] lg:mt-0">
@@ -268,9 +299,9 @@
     <p><span class="text-[24px]">©</span> <span data-i18n="copyright"></span></p>
     <!-- Sprachwechsel Buttons -->
     <div class="flex items-center text-[1rem] mt-[1rem] lg:mt-[0rem]">
-      <a href="#" data-i18n="btn_lang_de" onclick="setLanguage('de'); return false;"></a>
+      <a class="cursor-pointer" data-i18n="btn_lang_de" data-i18n-aria="german_aria" onclick="setLanguage('de'); return false;"></a>
       <div class="w-[24px] divider-komet-small-rotated h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
-      <a href="#" data-i18n="btn_lang_en" onclick="setLanguage('en'); return false;"></a>
+      <a class="cursor-pointer" data-i18n="btn_lang_en" data-i18n-aria="english_aria" onclick="setLanguage('en'); return false;"></a>
     </div>
   </footer>
 </div>
