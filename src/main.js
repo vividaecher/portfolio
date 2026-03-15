@@ -3,16 +3,28 @@ import { loadTranslations } from './i18n.js'
 
 function renderSkills() {
 
+  const spaceViolet = getComputedStyle(document.documentElement)
+  .getPropertyValue("--space-violet")
+  .trim();
+
+  const spaceGray = getComputedStyle(document.documentElement)
+  .getPropertyValue("--space-gray")
+  .trim();
+
+  const spaceOrange = getComputedStyle(document.documentElement)
+  .getPropertyValue("--space-orange")
+  .trim();
+
   const skills = [
-    { key: "skill_html", level: 5, color: "bg-purple-400" },
-    { key: "skill_css", level: 5, color: "bg-orange-500" },
-    { key: "skill_js", level: 3, color: "bg-gray-300" },
-    { key: "skill_frameworks", level: 3, color: "bg-purple-400" },
-    { key: "skill_typo3", level: 4, color: "bg-orange-500" },
-    { key: "skill_git", level: 4, color: "bg-gray-300" },
-    { key: "skill_uiux", level: 4, color: "bg-purple-400" },
-    { key: "skill_concept", level: 3, color: "bg-orange-500" },
-    { key: "skill_agile", level: 4, color: "bg-gray-300" }
+    { key: "skill_html", level: 5, color: "bg-[var(--space-violet)]"},
+    { key: "skill_css", level: 5, color: "bg-[var(--space-orange)]"},
+    { key: "skill_js", level: 3, color: "bg-[var(--space-gray)]"},
+    { key: "skill_frameworks", level: 3, color: "bg-[var(--space-violet)]"},
+    { key: "skill_typo3", level: 4, color: "bg-[var(--space-orange)]"},
+    { key: "skill_git", level: 4, color: "bg-[var(--space-gray)]"},
+    { key: "skill_uiux", level: 4, color: "bg-[var(--space-violet)]"},
+    { key: "skill_concept", level: 3, color: "bg-[var(--space-orange)]"},
+    { key: "skill_agile", level: 4, color: "bg-[var(--space-gray)]"}
   ];
 
   const grid = document.getElementById("skillsGrid")
@@ -24,9 +36,9 @@ function renderSkills() {
     for (let i = 1; i <= 5; i++) {
 
       if (i <= skill.level) {
-        bars += `<div class="h-2 w-full md:w-10 ${skill.color}"></div>`
+        bars += `<div class="h-2 w-full lg:w-10 ${skill.color}"></div>`
       } else {
-        bars += `<div class="h-2 w-full md:w-10 bg-gray-700"></div>`
+        bars += `<div class="h-2 w-full lg:w-10 ${skill.color} opacity-25"></div>`
       }
 
     }
@@ -43,9 +55,9 @@ function renderSkills() {
   })
 
   const softSkillsData = [
-    { key: "soft_pairing", icon: "satellite_alt", color: "text-purple-400" },
-    { key: "soft_team", icon: "diversity_1", color: "text-orange-500" },
-    { key: "soft_communication", icon: "mic", color: "text-gray-300" }
+    { key: "soft_pairing", icon: "satellite_alt", color: "text-[var(--space-violet)]" },
+    { key: "soft_team", icon: "diversity_1", color: "text-[var(--space-orange)]" },
+    { key: "soft_communication", icon: "mic", color: "text-[var(--space-gray)]" }
   ];
 
   const softSkills = document.getElementById("softSkills");
@@ -53,7 +65,7 @@ function renderSkills() {
   softSkillsData.forEach(skill => {
 
     const html = `
-    <div class="flex md:flex-col items-center gap-2">
+    <div class="flex flex-row sm:flex-col items-center gap-2">
       <span class="material-symbols-outlined ${skill.color}">
         ${skill.icon}
       </span>
@@ -72,8 +84,6 @@ function renderSkills() {
 
 
 function renderExperience() {
-
-
   const orbitGridData = [
     { key: "current_job", icon: "satellite_alt", color: "text-purple-400" },
     { key: "soft_team", icon: "diversity_1", color: "text-orange-500" },
@@ -101,16 +111,6 @@ function renderExperience() {
   loadTranslations(window.currentLang)
 
 }
-
-
-
-
-
-
-
-
-
-
 
 function getInitialLanguage() {
 

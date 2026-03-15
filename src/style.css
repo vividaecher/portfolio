@@ -75,6 +75,9 @@
   /* Colors */
   --space-black: #0A0F1F;
   --neon-blue: #00F5FF;
+  --space-violet: #AA77FF;
+  --space-orange: #FF6F3C;
+  --space-gray: #C3C6C8;
 }
 
 /* Responsive spacing overrides */
@@ -298,7 +301,22 @@ h1, h2, h3, h4, header, .small {
   .nav-link:hover { color: var(--neon-blue); text-shadow: 0 0 6px var(--neon-blue); }
 
 
-  .current {@apply text-[var(--neon-blue)] lowercase; transform: translateX(6px);}
+  .current {
+    @apply !text-[var(--neon-blue)] lowercase px-1;
+    background-image: linear-gradient(var(--neon-blue), var(--neon-blue)),
+                      linear-gradient(var(--neon-blue), var(--neon-blue)),
+                      linear-gradient(var(--neon-blue), var(--neon-blue)),
+                      linear-gradient(var(--neon-blue), var(--neon-blue));
+                      background-repeat: no-repeat;
+                      background-size: 4px 2px;
+                      background-position: top left, top right, bottom left, bottom right;
+                      border: solid var(--neon-blue);
+                      border-width: 0 2px;
+  }
+ 
+  .current-mobile {
+    @apply !text-[var(--neon-blue)] lowercase; transform: translateX(1rem);
+  }
 
   .mobile-link { @apply flex items-center gap-4 text-white transition-all duration-300; }
   .mobile-link:hover { color: var(--neon-blue); transform: translateX(6px); }

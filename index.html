@@ -20,26 +20,26 @@
     <div class="h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
       <ul class="flex flex-col text-xl mt-12">
         <li class="nav-item">
-          <a class="mobile-link" aria-label="Startseite von Virginia Dächer" title="Startseite Virginia Dächer">
-            <span class="material-symbols-outlined">arrow_forward</span>
+          <a class="mobile-link current-mobile" aria-label="Startseite von Virginia Dächer" title="Startseite Virginia Dächer">
+            <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_launchpad"></span>
           </a>
         </li>
         <li class="nav-item">
           <a class="mobile-link" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_crew_profile"></span>
           </a>
         </li>
         <li class="nav-item">
           <a class="mobile-link" aria-label="Portfolio von Virginia Dächer führt" title="Portfolio von Virginia Dächer">
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_missions"></span>
           </a>
         </li>
         <li class="nav-item">
           <a class="mobile-link" aria-label="Impressum & Datenschutz von Virginia Dächer" title="Impressum & Datenschutz Virginia Dächer">
-            <span class="material-symbols-outlined">arrow_forward</span>
+            <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_imprint"></span>
           </a>
         </li>
@@ -55,7 +55,7 @@
         <div class="grid grid-cols-12 items-center py-4">
           <div class="col-span-5 flex items-center">
             <a href="#" class="current nav-link shrink-0 text-base font-medium" aria-label="Startseite Virginia Dächer">
-              [<span data-i18n="nav_launchpad"></span>]
+              <span data-i18n="nav_launchpad"></span>
             </a>
             <a href="#" class="nav-link mx-auto text-base font-medium" aria-label="Mehr über Virginia Dächer erfahren" title="Über Virginia Dächer">
               <span data-i18n="nav_crew_profile"></span>
@@ -116,20 +116,20 @@
       <div class="order-2 lg:order-1">
         <section class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl">
           <!-- SKILLS HEADER -->
-          <div class="border-b border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] md:pr-[2rem] md:pl-[2rem] md:pt-[1rem] md:pb-[1rem] glowing-box">
+          <div class="border-b border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] lg:pr-[2rem] lg:pl-[2rem] lg:pt-[1rem] lg:pb-[1rem] glowing-box">
             <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="skills_title"></h4>
           </div>
 
           <!-- Skills werden hier automatisch eingefügt -->
-          <div id="skillsGrid" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-[1rem] md:gap-[2rem] md:grid-cols-2 lg:grid-cols-3"></div>
+          <div id="skillsGrid" class="px-[1rem] py-[1rem] lg:px-[2rem] lg:py-[2rem] grid gap-[1rem] lg:gap-[2rem] lg:grid-cols-2 lg:grid-cols-3"></div>
 
           <!-- SOFT SKILLS HEADER -->
-          <div class="border-y border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] md:pr-[2rem] md:pl-[2rem] md:pt-[1rem] md:pb-[1rem] glowing-box">
+          <div class="border-y border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] lg:pr-[2rem] lg:pl-[2rem] lg:pt-[1rem] lg:pb-[1rem] glowing-box">
             <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="softskills_title"></h4>
           </div>
 
           <!-- Soft Skills Container -->
-          <div id="softSkills" class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem] grid gap-[1rem] md:gap-[2rem] md:grid-cols-3 text-center"></div>
+          <div id="softSkills" class="px-[1rem] py-[1rem] lg:px-[2rem] lg:py-[2rem] grid gap-[1rem] lg:gap-[2rem] sm:grid-cols-3 text-center"></div>
         </section>
       </div>
       <div class="order-1 lg:order-2">
@@ -159,28 +159,26 @@
             <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="experience_title"></h4>
           </div>
           <!-- TIMELINE -->
-          <div class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem]">
-            <div class="flex">
-              <!-- Datum -->
-              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full md:w-[70%]">
-                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_date"></div>
-                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_date"></div>
-              </div>
-              <!-- vertikale Orbit-Linie -->
-              <div class="hidden md:block divider-komet divider-komet-small-rotated-revert !w-[180px]"></div>
-            
-              <!-- Job -->
-              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
-                <div>
-                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_company"></span>
-                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_1_role"></p>
+          <div class="px-[1rem] py-[1rem] lg:px-[2rem] lg:py-[2rem]">
+              <div class="flex justify-between flex-col lg:flex-row">
+                <div class="w-[55%] pr-0 lg:pr-[2rem]">
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_date"></p>
                 </div>
-                <div>
-                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_company"></span>
-                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="exp_2_role"></p>
+                <div class="pb-[1rem] w-full relative">
+                  <div class="hidden lg:block divider-komet divider-komet-small-rotated-revert absolute w-[130px] top-[5px] left-[-86px]"></div>
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_1_company"></p>
+                  <p class="text-white tracking-wider font-normal" data-i18n="exp_1_role"></p>
                 </div>
               </div>
-            </div>
+              <div class="flex justify-between flex-col lg:flex-row">
+                <div class="w-[55%] pr-0 lg:pr-[2rem]">
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_date"></p>
+                </div>
+                <div  class="w-full">
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="exp_2_company"></p>
+                  <p class="text-white tracking-wider font-normal" data-i18n="exp_2_role"></p>
+                </div>
+              </div>
           </div>
         </section>
         <!-- Schulbildung  -->
@@ -190,28 +188,26 @@
             <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="school_title"></h4>
           </div>
           <!-- TIMELINE -->
-          <div class="px-[1rem] py-[1rem] md:px-[2rem] md:py-[2rem]">
-            <div class="flex">
-              <!-- Datum -->
-              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full md:w-[70%]">
-                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_date"></div>
-                <div class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_date"></div>
-              </div>
-              <!-- vertikale Orbit-Linie -->
-              <div class="hidden md:block divider-komet divider-komet-small-rotated-revert !w-[180px]"></div>
-            
-              <!-- Job -->
-              <div class="grid gap-[0.5rem] md:gap-[1rem] items-start w-full">
-                <div>
-                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_school"></span>
-                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_1_qualification"></p>
+          <div class="px-[1rem] py-[1rem] lg:px-[2rem] lg:py-[2rem]">
+              <div class="flex justify-between flex-col lg:flex-row">
+                <div class="w-[55%] pr-0 lg:pr-[2rem]">
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_date"></p>
                 </div>
-                <div>
-                  <span class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_school"></span>
-                  <p class="mt-[0.25rem] md:mt-[0.5rem] text-[0.875rem] font-normal" data-i18n="school_2_qualification"></p>
+                <div class="pb-[1rem] w-full relative">
+                  <div class="hidden lg:block divider-komet divider-komet-small-rotated-revert absolute w-[130px] top-[5px] left-[-86px]"></div>
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="school_1_school"></p>
+                  <p class="text-white tracking-wider font-normal" data-i18n="school_1_qualification"></p>
                 </div>
               </div>
-            </div>
+              <div class="flex justify-between flex-col lg:flex-row">
+                <div class="w-[55%] pr-0 lg:pr-[2rem]">
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_date"></p>
+                </div>
+                <div class="w-full">
+                  <p class="text-white tracking-wider small uppercase font-bold" data-i18n="school_2_school"></p>
+                  <p class="text-white tracking-wider font-normal" data-i18n="school_2_qualification"></p>
+                </div>
+              </div>
           </div>
         </section>
     </div>
@@ -221,9 +217,9 @@
         <div class="divider-komet mb-[1rem] text-left"></div>
         <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_mission_log"></p>
       </div>
-      <div class="flex items-center justify-center flex-wrap">
-         <a href="./documents/lebenslauf_virginia_daecher.pdf" rel="noopener noreferrer" target="_blank" title="Lebenslauf von Virginia Dächer herunterladen" aria-label="Der Lebenslauf von Virginia Dächer öffnet sich als PDF in einem neuen Tab" class="primary-cta mb-[1rem] md:mb-0" data-i18n="mission_log_button"></a>
-         <a class="ml-[0rem] md:ml-[1rem] lowercase" data-i18n="section_portfolio_link_mission_log" href="#" title="Portfolio von Virginia Dächer" aria-label="Öffnet das Portfolio von Virginia Dächer"></a>
+      <div class="flex items-center justify-center flex-col sm:flex-row">
+         <a href="./documents/lebenslauf_virginia_daecher.pdf" rel="noopener noreferrer" target="_blank" title="Lebenslauf von Virginia Dächer herunterladen" aria-label="Der Lebenslauf von Virginia Dächer öffnet sich als PDF in einem neuen Tab" class="primary-cta mb-[1rem] sm:mb-0" data-i18n="mission_log_button"></a>
+         <a class="ml-[0rem] sm:ml-[1rem] lowercase" data-i18n="section_portfolio_link_mission_log" href="#" title="Portfolio von Virginia Dächer" aria-label="Öffnet das Portfolio von Virginia Dächer"></a>
       </div>
     </div>
   </section>
@@ -242,11 +238,11 @@
         <h3 data-i18n="section_title_bodytext_mission_log"></h3>
         <div class="divider-komet mb-[1rem] text-left"></div>
         <p class="mb-[1rem]" data-i18n="section_bodytext_paragraph_mission_log"></p>
-        <div class="flex justify-center md:justify-start">
+        <div class="flex justify-center lg:justify-start">
           <a href="mailto:virginiadaecher@gmail.com" rel="noopener noreferrer" aria-label="Dieser Link öffnet Ihr Mailprogramm mit der Vorbelegung an die E-Mailadresse von Virginia Dächer" class="primary-cta" data-i18n="contact_me_button"></a>
         </div>
       </div>
-      <div class="flex items-center justify-center flex-wrap mt-[1rem] md:mt-0">
+      <div class="flex items-center justify-center flex-wrap mt-[1rem] lg:mt-0">
          <a href="https://dribbble.com/virginiadaecher" rel="noopener noreferrer" target="_blank" title="Dribbble Profil von Virginia Dächer" aria-label="Das Dribbble-Profil von Virginia Dächer öffnet sich in einem neuen Tab">
           <img src="/img/Dribbble.svg" alt="Dribbble Logo Icon" class="h-[32px] pr-[1rem]">
          </a>
@@ -271,7 +267,7 @@
   <footer class="flex justify-between flex-wrap">
     <p><span class="text-[24px]">©</span> <span data-i18n="copyright"></span></p>
     <!-- Sprachwechsel Buttons -->
-    <div class="flex items-center text-[1rem] mt-[1rem] md:mt-[0rem]">
+    <div class="flex items-center text-[1rem] mt-[1rem] lg:mt-[0rem]">
       <a href="#" data-i18n="btn_lang_de" onclick="setLanguage('de'); return false;"></a>
       <div class="w-[24px] divider-komet-small-rotated h-[2px] bg-gradient-to-r from-transparent via-[var(--neon-blue)] to-transparent"></div>
       <a href="#" data-i18n="btn_lang_en" onclick="setLanguage('en'); return false;"></a>
