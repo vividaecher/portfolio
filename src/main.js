@@ -122,21 +122,73 @@ window.setLanguage = setLanguage
    PROJECT DATA
 ----------------------------- */
 const projects = {
+  portfolio: {
+    title: "project_portfolio_title",
+    image: "./img/projects/detailansicht_portfolio.png",
+    alt: "project_details_portfolio_alt",
+    description: "project_portfolio_description"
+  },
   koelnticket: {
     title: "project_koelnticket_title",
     image: "./img/projects/detailansicht_koelnticket.png",
     alt: "project_details_koelnticket_alt",
-    description:
-      "project_koelnticket_description"
+    description: "project_koelnticket_description"
   },
-  benrath: {
-    title: "project_schloss_benrath_title",
+  benrathshop: {
+    title: "project_benrathshop_title",
     image: "./img/projects/detailansicht_schloss_benrath.png",
-    alt: "project_details_schloss_benrath_alt",
-    description:
-      "project_schloss_benrath_description"
+    alt: "project_details_benrathshop_alt",
+    description: "project_benrathshop_description"
+  },
+  carta: {
+    title: "project_carta_title",
+    image: "./img/projects/detailansicht_carta.png",
+    alt: "project_details_carta_alt",
+    description: "project_carta_description"
+  },
+  bunttoo: {
+    title: "project_bunttoo_title",
+    image: "./img/projects/detailansicht_bunttoo.png",
+    alt: "project_details_bunttoo_alt",
+    description: "project_bunttoo_description"
+  },
+  domaindepot: {
+    title: "project_domaindepot_title",
+    image: "./img/projects/detailansicht_domaindepot.png",
+    alt: "project_details_domaindepot_alt",
+    description: "project_domaindepot_description"
+  },
+  sipgate_dashboard: {
+    title: "project_sipgate_dashboard_title",
+    image: "./img/projects/detailansicht_sipgate_dashboard.png",
+    alt: "project_details_sipgate_dashboard_alt",
+    description: "project_sipgate_dashboard_description"
+  },
+  sipgate_gmail_extension: {
+    title: "project_sipgate_gmail_extension_title",
+    image: "./img/projects/detailansicht_sipgate_gmail_extension.png",
+    alt: "project_details_sipgate_gmail_extension_alt",
+    description: "project_sipgate_gmail_extension_description"
+  },
+  erstwaehler: {
+    title: "project_erstwaehler_title",
+    image: "./img/projects/detailansicht_erstwaehler.png",
+    alt: "project_details_erstwaehler_alt",
+    description: "project_erstwaehler_description"
+  },
+  duesseldorf_tour: {
+    title: "project_duesseldorf_tour_title",
+    image: "./img/projects/detailansicht_duesseldorf_tour.png",
+    alt: "project_details_duesseldorf_tour_alt",
+    description: "project_duesseldorf_tour_description"
+  },
+  dailyui_festival: {
+    title: "project_dailyui_festival_title",
+    image: "./img/projects/detailansicht_dailyui_festival.png",
+    alt: "project_details_dailyui_festival_alt",
+    description: "project_dailyui_festival_description"
   }
-}
+};
 
 /* -----------------------------
    PROJECT OVERLAY
