@@ -108,6 +108,18 @@
   "404_hero_subtitle": "Oops... this route doesn't exist",
   "404_hero_alt": "Portrait of Virginia Dächer in a space shirt with the 404 logo, AI-generated",
 
+ "dribbble_title": "Dribbble Profile",
+  "dribbble_aria": "Opens the Dribbble profile of Virginia Dächer in a new tab",
+
+  "github_title": "GitHub Profile",
+  "github_aria": "Opens the GitHub profile of Virginia Dächer in a new tab",
+
+  "xing_title": "Xing Profile",
+  "xing_aria": "Opens the Xing profile of Virginia Dächer in a new tab",
+
+  "linkedin_title": "LinkedIn Profile",
+  "linkedin_aria": "Opens the LinkedIn profile of Virginia Dächer in a new tab",
+
   "project_preview_button": "View mission report",
 
   "project_preview_portfolio_title": "Portfolio Platform",

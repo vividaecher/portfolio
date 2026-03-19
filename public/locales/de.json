@@ -107,6 +107,18 @@
   "404_hero_subtitle": "Oops... diese Route existiert nicht",
   "404_hero_alt": "Portrait von Virginia Dächer in einem Space Shirt mit 404-Logo, KI-Generiert",
   
+  "dribbble_title": "Dribbble Profil",
+  "dribbble_aria": "Öffnet das Dribbble-Profil von Virginia Dächer in einem neuen Tab",
+
+  "github_title": "GitHub Profil",
+  "github_aria": "Öffnet das GitHub-Profil von Virginia Dächer in einem neuen Tab",
+
+  "xing_title": "Xing Profil",
+  "xing_aria": "Öffnet das Xing-Profil von Virginia Dächer in einem neuen Tab",
+
+  "linkedin_title": "LinkedIn Profil",
+  "linkedin_aria": "Öffnet das LinkedIn-Profil von Virginia Dächer in einem neuen Tab",
+  
   "project_preview_button": "Einsatzbericht anschauen",
 
   "project_preview_portfolio_title": "Portfolio-Plattform",
