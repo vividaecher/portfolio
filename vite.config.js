@@ -10,7 +10,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
         uebermich: resolve(__dirname, 'uebermich.html'),
-        imprint: resolve(__dirname, 'imprint.html')
+        imprint: resolve(__dirname, 'imprint.html'),
+        404: resolve(__dirname, '404.html')
       }
     }
   }

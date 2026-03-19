@@ -3,6 +3,7 @@
   "meta_title_portfolio": "Portfolio – Virginia Dächer | Frontend & UX/UI Projects",
   "meta_title_imprint": "Legal Notice & Privacy Policy – Virginia Dächer",
   "meta_title_ueber_mich": "About Virginia Dächer – Frontend Developer & UX/UI Designer",
+  "meta_title_404": "404 - Page not found",
 
   "meta_description": "Portfolio of Virginia Dächer – frontend developer and UX/UI designer from Germany. Focus on modern web design, user interfaces and frontend development.",
   "meta_description_portfolio": "Selected projects by Virginia Dächer: frontend development, UX/UI design and web design for modern digital products.",
@@ -98,6 +99,14 @@
   "hobby_cinema": "Going to the movies",
   "hobby_escape_rooms": "Escape rooms",
   "hobby_concerts": "Going to concerts", 
+
+  "404_hero_title": "404<br> Lost in Space",
+  "404_button": "Back to Command Center",
+  "404_link": "https://virginia.uber.space/",
+  "404_aria": "Back to the homepage",
+  "404_title": "Back to the homepage",
+  "404_hero_subtitle": "Oops... this route doesn't exist",
+  "404_hero_alt": "Portrait of Virginia Dächer in a space shirt with the 404 logo, AI-generated",
 
   "project_preview_button": "View mission report",
 

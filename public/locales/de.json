@@ -3,6 +3,7 @@
   "meta_title_portfolio": "Portfolio – Virginia Dächer | Frontend & UX/UI Projekte",
   "meta_title_imprint": "Impressum & Datenschutz – Virginia Dächer",
   "meta_title_ueber_mich": "Über Virginia Dächer – Frontend Developer & UX/UI Designerin",
+  "meta_title_404": "404 - Seite nicht gefunden",
 
   "meta_description": "Portfolio von Virginia Dächer – Frontend Developer und UX/UI Designerin aus NRW. Fokus auf Webdesign, Interfaces und moderne Frontend-Entwicklung.",
   "meta_description_portfolio": "Ausgewählte Projekte von Virginia Dächer: Frontend Development, UX/UI Design und Webdesign für moderne digitale Produkte.",
@@ -97,6 +98,14 @@
   "hobby_cinema": "ins Kino gehen",
   "hobby_escape_rooms": "Escape Rooms",
   "hobby_concerts": "Konzerte besuchen", 
+
+  "404_hero_title": "404<br> Lost in Space",
+  "404_button": "Zurück zur Kommandozentrale",
+  "404_link": "https://virginia.uber.space/",
+  "404_aria": "zurück zur Startseite",
+  "404_title": "zurück zur Startseite",
+  "404_hero_subtitle": "Oops... diese Route existiert nicht",
+  "404_hero_alt": "Portrait von Virginia Dächer in einem Space Shirt mit 404-Logo, KI-Generiert",
   
   "project_preview_button": "Einsatzbericht anschauen",
 
