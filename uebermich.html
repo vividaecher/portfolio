@@ -2,17 +2,17 @@
 <html lang="de">
 <head>
   <meta name="robots" content="index, follow">
-  <title data-i18n-meta="meta_title_imprint"></title>
-  <meta name="description" data-i18n-meta="meta_description_imprint">
-  <meta name="keywords" data-i18n-meta="meta_keywords_imprint">
+  <title data-i18n-meta="meta_title_ueber_mich"></title>
+  <meta name="description" data-i18n-meta="meta_description_ueber_mich">
+  <meta name="keywords" data-i18n-meta="meta_keywords_ueber_mich">
   <meta name="language" content="de, en">
-  <link rel="canonical" href="https://virginia.uber.space/imprint.html">
+  <link rel="canonical" href="https://virginia.uber.space/uebermich.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Virginia Dächer Portfolio">
-  <meta property="og:title" data-i18n-meta="meta_title_imprint">
-  <meta property="og:description" data-i18n-meta="meta_description_imprint">
-  <meta property="og:url" content="https://virginia.uber.space/imprint.html">
+  <meta property="og:title" data-i18n-meta="meta_title_ueber_mich">
+  <meta property="og:description" data-i18n-meta="meta_description_ueber_mich">
+  <meta property="og:url" content="https://virginia.uber.space/uebermich.html">
   <meta property="og:image" content="Activities:https://virginia.uber.space/img/social-preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -24,6 +24,54 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Person Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Virginia Dächer",
+      "url": "https://virginia.uber.space/",
+      "jobTitle": "Frontend Developer & UX/UI Designer",
+      "description": "Frontend developer and UX/UI designer focusing on modern web design and user-centered interfaces.",
+      "email": "mailto:virginiadaecher@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Leverkusen",
+        "addressCountry": "Germany"
+      },
+      "sameAs": [
+        "https://github.com/vividaecher",
+        "https://dribbble.com/virginiadaecher",
+        "https://www.linkedin.com/in/virginia-d%C3%A4cher-8b9a13134/",
+        "https://www.xing.com/profile/Virginia_Daecher"
+      ]
+    }
+  </script>
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {
+        "@id": "https://virginia.uber.space/"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portfolio",
+      "item": {
+        "@id": "https://virginia.uber.space/portfolio.html"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="text-white bg-[var(--space-black)] bg-[url(/img/Sterne.svg)] bg-no-repeat bg-top">
 <!-- MOBILE NAV -->
@@ -46,7 +94,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link" data-i18n-href="ueber_mich_link" data-i18n-aria="ueber_mich_aria" data-i18n-title="ueber_mich_title">
+          <a class="mobile-link current-mobile" data-i18n-href="ueber_mich_link" data-i18n-aria="ueber_mich_aria" data-i18n-title="ueber_mich_title">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_crew_profile"></span>
           </a>
@@ -58,7 +106,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="mobile-link current-mobile" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
+          <a class="mobile-link" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
             <span class="material-symbols-outlined text-[var(--neon-blue)]">arrow_forward</span>
             <span data-i18n="nav_imprint"></span>
           </a>
@@ -77,7 +125,7 @@
             <a class="nav-link shrink-0 text-base font-medium" data-i18n-href="homescreen_link" data-i18n-aria="homescreen_aria" data-i18n-title="homescreen_title">
               <span data-i18n="nav_launchpad"></span>
             </a>
-            <a class="nav-link mx-auto text-base font-medium" data-i18n-href="ueber_mich_link" data-i18n-aria="ueber_mich_aria" data-i18n-title="ueber_mich_title">
+            <a class="current nav-link mx-auto text-base font-medium" data-i18n-href="ueber_mich_link" data-i18n-aria="ueber_mich_aria" data-i18n-title="ueber_mich_title">
               <span data-i18n="nav_crew_profile"></span>
             </a>
           </div>
@@ -88,7 +136,7 @@
             <a class="nav-link mx-auto text-base font-medium" data-i18n-href="portfolio_link" data-i18n-aria="portfolio_aria" data-i18n-title="portfolio_title">
               <span data-i18n="nav_missions"></span>
             </a>
-            <a class="current nav-link shrink-0 text-base font-medium" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
+            <a class="nav-link shrink-0 text-base font-medium" data-i18n-href="imprint_link" data-i18n-aria="imprint_aria">
               <span data-i18n="nav_imprint"></span>
             </a>
           </div>
@@ -113,18 +161,43 @@
 </section>
 <div class="container-main">
   <section class="section">
-      <h1 class="font-medium text-left" data-i18n="nav_imprint"></h1>
+      <h1 class="font-medium text-left" data-i18n="nav_crew_profile"></h1>
       <div class="divider-komet mb-[1rem] text-left"></div>
       <div class="split section-inner">
         <div>
-          <h2 class="h3" data-i18n="privacy.policy_title"></h2>
-          <div class="divider-komet mb-[1rem] text-left"></div>
-          <span data-i18n="privacy.policy_bodytext"></span>
+          <span data-i18n="crew.profile_bodytext"></span>
+        </div>
+        <div class="flex items-center justify-center flex-col sm:flex-row">
+        <a 
+          data-i18n="nav_missions"
+          data-i18n-href="portfolio_link"
+          data-i18n-aria="portfolio_aria"
+          data-i18n-title="portfolio_title"
+          class="primary-cta mb-[1rem] sm:mb-0">
+        </a>
+        <a
+          data-i18n="mail_link_brackets" 
+          data-i18n-aria="mail_aria" 
+          href="mailto:virginiadaecher@gmail.com"
+          rel="noopener noreferrer"
+          class="ml-[0rem] sm:ml-[1rem] lowercase">
+        </a>
+      </div>
+    </section>
+    <section class="section-bottom">
+      <div class="split">
+        <div>
+           <section class="glowing-box border-2 border-[var(--neon-blue)] rounded-br-3xl rounded-bl-lg rounded-tr-lg rounded-tl-3xl">
+            <div class="border-b border-[var(--neon-blue)] pr-[1rem] pl-[1rem] pt-[0.5rem] pb-[0.5rem] lg:pr-[2rem] lg:pl-[2rem] lg:pt-[1rem] lg:pb-[1rem] glowing-box">
+              <h4 class="uppercase tracking-widest text-white font-medium" data-i18n="hobbies_title"></h4>
+            </div>
+            <div id="hobbies" class="px-[1rem] py-[1rem] lg:px-[2rem] lg:py-[2rem] grid gap-[1rem] lg:gap-[2rem] sm:grid-cols-3 text-center"></div>
+          </section>
         </div>
         <div>
-          <h2 class="h3" data-i18n="imprint_title"></h2>
+          <h2 class="h3" data-i18n="agile_title"></h2>
           <div class="divider-komet mb-[1rem] text-left"></div>
-          <span data-i18n="imprint_bodytext"></span>
+          <span data-i18n="agile_bodytext"></span>
         </div>
     </section>
 </div>

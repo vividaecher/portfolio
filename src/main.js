@@ -61,6 +61,27 @@ function renderSkills() {
     })
   }
 
+  const hobbiesData = [
+    { key: "hobby_cinema", icon: "cinematic_blur", color: "text-[var(--space-violet)]" },
+    { key: "hobby_escape_rooms", icon: "crossword", color: "text-[var(--space-orange)]" },
+    { key: "hobby_concerts", icon: "festival", color: "text-[var(--space-gray)]" }
+  ];
+
+  const hobbies = document.getElementById("hobbies")
+  if (hobbies) {
+    hobbiesData.forEach(hobby => {
+      const html = `
+        <div class="flex flex-row sm:flex-col items-center gap-2">
+          <span class="material-symbols-outlined ${hobby.color}">
+            ${hobby.icon}
+          </span>
+          <p class="text-white font-bold" data-i18n="${hobby.key}"></p>
+        </div>
+      `;
+      hobbies.insertAdjacentHTML("beforeend", html);
+    })
+  }
+
   loadTranslations(window.currentLang)
 }
 
@@ -193,53 +214,90 @@ const projects = {
 /* -----------------------------
    PROJECT OVERLAY
 ----------------------------- */
+
 function initProjectOverlay() {
 
   const overlay = document.getElementById("projectOverlay");
-  const closeOverlay = document.getElementById("closeOverlay");
+  const closeOverlayBtn = document.getElementById("closeOverlay");
   const overlayTitle = document.getElementById("overlayTitle");
   const overlayImage = document.getElementById("overlayImage");
-  const overlayAlt = document.getElementById("overlayAlt");
   const overlayDescription = document.getElementById("overlayDescription");
 
-  if (!overlay || !closeOverlay || !overlayTitle || !overlayImage || !overlayDescription) return;
+  if (!overlay || !closeOverlayBtn || !overlayTitle || !overlayImage || !overlayDescription) return;
 
+  let isOverlayOpen = false;
+
+  /* ---------------- OPEN ---------------- */
   document.querySelectorAll(".open-project").forEach(button => {
 
     button.addEventListener("click", () => {
 
-  const project = projects[button.dataset.project];
-    if (!project) return;
+      const project = projects[button.dataset.project];
+      if (!project) return;
 
-      // Titel übersetzen
+      // Titel
       overlayTitle.dataset.i18n = project.title;
 
-      // Beschreibung übersetzen
+      // Beschreibung
       overlayDescription.dataset.i18n = project.description;
 
-      // Bild setzen
+      // Bild
       overlayImage.src = project.image;
 
-      // Alt-Tag vorbereiten
+      // Alt
       overlayImage.dataset.i18nAlt = project.alt;
 
       // Übersetzung anwenden
       loadTranslations(window.currentLang);
 
+      // Overlay anzeigen
       overlay.classList.add("active");
       document.body.classList.add("overflow-hidden");
+
+      if (!isOverlayOpen) {
+        history.pushState({ overlay: true }, "", "#project");
+        isOverlayOpen = true;
+      }
     });
 
   });
 
+  /* ---------------- CLOSE ---------------- */
   const close = () => {
-  overlay.classList.remove("active");
-  document.body.classList.remove("overflow-hidden");
-};
 
-  closeOverlay.addEventListener("click", close);
-  overlay.addEventListener("click", e => { if(e.target === overlay) close(); });
-  document.addEventListener("keydown", e => { if(e.key === "Escape") close(); });
+    if (!isOverlayOpen) return;
+
+    overlay.classList.remove("active");
+    document.body.classList.remove("overflow-hidden");
+
+    isOverlayOpen = false;
+
+    // 🔥 wichtig: NICHT doppelt back auslösen
+    if (history.state?.overlay) {
+      history.back();
+    }
+  };
+
+  closeOverlayBtn.addEventListener("click", close);
+
+  overlay.addEventListener("click", e => {
+    if (e.target === overlay) close();
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") close();
+  });
+
+  /* ---------------- BACK BUTTON ---------------- */
+  window.addEventListener("popstate", (event) => {
+
+    // Wenn Overlay offen war → schließen
+    if (isOverlayOpen) {
+      overlay.classList.remove("active");
+      document.body.classList.remove("overflow-hidden");
+      isOverlayOpen = false;
+    }
+  });
 
 }
 
